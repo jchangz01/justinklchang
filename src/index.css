@@ -1,3 +1,11 @@
+/*/////////////////////
+//General Tag's Styling 
+/////////////////////*/
+* {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +15,69 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', cursive; 
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+
+/*////////////////////////////
+General styling for all pages
+////////////////////////////*/
+#content-container {
+  height: 100vh;
+  background-color: black;
+}
+
+.width-size {
+  padding: 0 100px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/*//////////////////////
+Navigation bar styling 
+//////////////////////*/
+#navbar-container {
+  padding: 54px 72px 36px;
+}
+
+#navbar-contents {
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive; 
+}
+
+  #navbar-contents > * {
+    letter-spacing: 1px;
+    margin-right: 48px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline;
+  }
+
+  #navbar-contents > *:last-of-type {
+    margin-right: 0;
+  }
+
+  #navbar-contents > *:hover {
+    opacity: 0.5;
+  }
+
+#logo {
+  vertical-align: middle;
+  border-radius: 50%;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  font-size: 60px;
+  margin: 0 48px;
 }

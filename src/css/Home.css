@@ -1,0 +1,10 @@
+#home-section {
+    height: calc(100vh - 190px);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.home-section-content {
+    flex-basis: 50%;
+}
