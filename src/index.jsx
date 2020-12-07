@@ -6,12 +6,6 @@ import About from './components/About'
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-function PathNotFound() {
-  return (
-    <h3>Error 404 - Page Not Found!</h3>
-  )
-}
-
 //Set up routes
 ReactDOM.render(
   <BrowserRouter>
@@ -27,3 +21,9 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
+
+function PathNotFound() {
+  return (
+    <h3>Error 404 - Page Not Found!</h3>
+  )
+}
