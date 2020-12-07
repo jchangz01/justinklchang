@@ -4,6 +4,7 @@
 * {
   font-family: 'Roboto', sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Neue', cursive; 
+  letter-spacing: 2px;
 }
 
 header {
@@ -31,10 +33,11 @@ General styling for all pages
 #content-container {
   height: 100vh;
   background-color: black;
+  z-index: -3;
 }
 
 .width-size {
-  padding: 0 100px;
+  padding: 0 0px;
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -47,7 +50,7 @@ General styling for all pages
 Navigation bar styling 
 //////////////////////*/
 #navbar-container {
-  padding: 54px 72px 36px;
+  padding: 54px 72px 0;
 }
 
 #navbar-contents {
@@ -55,6 +58,7 @@ Navigation bar styling
   font-family: 'Bebas Neue', cursive; 
 }
 
+  #navbar-contents * { text-decoration: none;}
   #navbar-contents > * {
     letter-spacing: 1px;
     margin-right: 48px;

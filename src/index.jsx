@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './components/Home';
+import About from './components/About'
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -17,8 +18,9 @@ ReactDOM.render(
       <main>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/projects" component={Projects} exact/>
+        <Route path="/about" component={About} exact/>
         <Route path="/contact" component={Contact} exact/>
+        <Route path="/projects" component={Projects} exact/>
         <Route component={PathNotFound} />
       </Switch>
     </main>
