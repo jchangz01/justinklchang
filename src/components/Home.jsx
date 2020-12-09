@@ -35,8 +35,8 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                         <div class="home-main-content">
-                            <img src={profile} alt="Did not load, please refresh" className="home-main-pic"/>
-                            <div className="home-main-circ">
+                            <img src={profile} alt="Did not load, please refresh" className="home-main-pic float"/>
+                            <div className="home-main-circ float">
                                 <div className="home-main-subcirc"></div>
                             </div>
                         </div>

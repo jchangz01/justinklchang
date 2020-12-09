@@ -21,6 +21,7 @@
 
     /*Right Side Content */
     .about-main-title {
+        letter-spacing: 2px;
         font-size: 68px;
     }
 

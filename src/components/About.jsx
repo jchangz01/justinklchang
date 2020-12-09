@@ -35,20 +35,20 @@ export default class Contact extends React.Component {
                                 <h1 className="about-main-title">About Me</h1>
                                 <hr className="about-main-linebreak"></hr>
                                 <p className="about-main-paragraph">
-                                    Hello! My name is <span style={{fontWeight: "bold"}}>Justin Kyle Chang</span>. I am a 2nd year student at UCLA pursuing a 
+                                    Hello! My name is <span style={{fontWeight: "bold"}}>Justin Kyle Chang</span>. I am a 2nd-year student at UCLA pursuing a 
                                     B.E. degree in Computer Science and aspiring to be a future software engineer. 
                                 </p>
                                 <p className="about-main-paragraph">
-                                    My focus and interest lies in web development, particularly in front end design (HTML5, CSS3, JS/JSX); however, 
-                                    I am open to explore all fields of Computer Science! I am also knowledgeable in backend development 
-                                    (Node.js, Express, and MongoDB), C++ (Data structures and algorithms), Bash / Shell, and Git.
+                                    My focus and interest lie in web development, particularly in front end design (HTML5, CSS3, JS/JSX); 
+                                    however, I am open to exploring all fields of Computer Science! I am also knowledgeable in 
+                                    backend development (Node.js, Express, and MongoDB), C++ (Data structures and algorithms), Bash / Shell, and Git.
                                 </p> 
                                 <p className="about-main-paragraph">
-                                    I love to solve problems, collaborate in teams, and during my free time, 
+                                    I love to solve problems, work on side projects, collaborate in teams, and during my free time, 
                                     go on runs and hikes! I am currently looking for a 2021 summer internship! 
                                 </p>
                                 <p className="about-main-paragraph">
-                                    Check out my projects <a href="/projects">here</a> or connect with me <a href="/contact">here</a>.
+                                    Check out my projects <a href="/projects">here</a> and/or connect with me <a href="/contact">here</a>.
                                 </p>
                                 <div className="about-main-socials">
                                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/"><FontAwesomeIcon icon={faInstagram}/></a>
