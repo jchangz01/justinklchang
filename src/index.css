@@ -46,6 +46,19 @@ General styling for all pages
   text-align: center;
 }
 
+/*//////////////////////////
+General styling for icons
+//////////////////////////*/
+.scroll-down-icon {
+  margin-top: 16px;
+  font-size: 40px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+  .scroll-down-icon:hover {
+    opacity: 0.4;
+  }
 
 /*/////////
 Animations 

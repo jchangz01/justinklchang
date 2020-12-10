@@ -1,0 +1,37 @@
+#project-main {
+    height: calc(100vh - 154px);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.project-main-content {
+    flex-basis: 100%;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}  
+    #project-main-title {
+        font-size: 80px;
+        letter-spacing: 3px;
+    }
+    #project-main-subtitle {
+        letter-spacing: 2px;
+        margin-top: 16px;
+        font-family: 'Roboto';
+        font-size: 18px;
+        color: gray;
+    }
+    .project-main-linebr {
+        margin: 32px auto;
+        width: 100px;
+        color: whitesmoke;
+    }
+    #project-main-des {
+        margin: 16px auto 0;
+        font-family: 'Roboto';
+        font-size: 16px;
+        width: 800px;
+        line-height: 22px;
+        color: lightgrey;
+    }

@@ -18,6 +18,36 @@ function NavBar (props) {
     )
 }
 
+function Socials (props) {
+    return (
+        <div id="contact-main-icon-container">
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/" className="icon-circle instagram"><FontAwesomeIcon className="icon" icon={faInstagram}/></a>
+                <h4 className="icon-name">Instagram</h4>
+            </div>
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-kyle-chang-31582419b/" className="icon-circle linkedin"><FontAwesomeIcon className="icon" icon={faLinkedin}/></a>
+                <h4 className="icon-name">LinkedIn</h4>
+            </div>
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/" className="icon-circle facebook"><FontAwesomeIcon className="icon" icon={faFacebook}/></a>
+                <h4 className="icon-name">Facebook</h4>
+            </div>
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01" className="icon-circle github"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
+                <h4 className="icon-name">GitHub</h4>
+            </div>
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en" className="icon-circle tiktok"><FontAwesomeIcon className="icon" icon={faTiktok}/></a>
+                <h4 className="icon-name">TikTok</h4>
+            </div>
+            <div>
+                <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493" className="icon-circle strava"><FontAwesomeIcon className="icon" icon={faStrava}/></a>
+                <h4 className="icon-name">Strava</h4>
+            </div>
+        </div>
+    )
+}
 export default class Contact extends React.Component {
     state = {
         message: "",
@@ -71,33 +101,8 @@ export default class Contact extends React.Component {
                                         </span>
                                     </h3>
                                 </div>
-                                {this.state.message ? <div key={this.state.updateKey} className="contact-message fade-in-2">Copied to Clipoard</div> : null}
-                                <div id="contact-main-icon-container">
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/" className="icon-circle instagram"><FontAwesomeIcon className="icon" icon={faInstagram}/></a>
-                                        <h4 className="icon-name">Instagram</h4>
-                                    </div>
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-kyle-chang-31582419b/" className="icon-circle linkedin"><FontAwesomeIcon className="icon" icon={faLinkedin}/></a>
-                                        <h4 className="icon-name">LinkedIn</h4>
-                                    </div>
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/" className="icon-circle facebook"><FontAwesomeIcon className="icon" icon={faFacebook}/></a>
-                                        <h4 className="icon-name">Facebook</h4>
-                                    </div>
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01" className="icon-circle github"><FontAwesomeIcon className="icon" icon={faGithub}/></a>
-                                        <h4 className="icon-name">GitHub</h4>
-                                    </div>
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en" className="icon-circle tiktok"><FontAwesomeIcon className="icon" icon={faTiktok}/></a>
-                                        <h4 className="icon-name">TikTok</h4>
-                                    </div>
-                                    <div>
-                                        <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493" className="icon-circle strava"><FontAwesomeIcon className="icon" icon={faStrava}/></a>
-                                        <h4 className="icon-name">Strava</h4>
-                                    </div>
-                                </div>
+                                {this.state.message ? <div key={this.state.updateKey} className="contact-message fade-in-2">Copied to Clipboard</div> : null}
+                                <Socials />
                             </div>
                         </div>
                 </section>
