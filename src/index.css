@@ -26,6 +26,11 @@ header {
   z-index: 1000;
 }
 
+ul {
+  text-decoration: underline;
+  display: inline;
+}
+
 
 /*////////////////////////////
 General styling for all pages
@@ -33,6 +38,11 @@ General styling for all pages
 #content-container {
   height: 100vh;
   background-color: black;
+  z-index: -3;
+}
+
+.content-container-alt {
+  height: 100vh;
   z-index: -3;
 }
 

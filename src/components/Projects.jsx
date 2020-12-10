@@ -1,4 +1,5 @@
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import '../css/Projects.css'
@@ -21,7 +22,7 @@ function NavBar (props) {
 export default class Contact extends React.Component {
     render() {
         return (
-            <div id="content-container">
+            <div id="content-container" style={{height: "auto"}}>
                 <header>
                     <NavBar/>
                 </header>
@@ -42,7 +43,24 @@ export default class Contact extends React.Component {
                                 my learning outcomes I had in mind while creating these projects!
                                 Click the arrow below to check out my latest piece of work and navigate below this to view a general display of all my works.
                             </p>
-                            <FontAwesomeIcon className="scroll-down-icon" icon={faCaretDown}/>
+                            <ScrollLink to="latest" spy={true} smooth={true} duration={320}><FontAwesomeIcon className="scroll-down-icon" icon={faCaretDown}/></ScrollLink>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div className="project-section">
+                        <div className="fade-in-4 width-size" id="latest">
+                            <div style={{paddingTop: "3vh"}}>
+                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
+                                <h1 className="project-section-title">Latest Project</h1>
+                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
+                            </div>
+                            <div style={{marginTop: "4vh"}}>
+                                <h2 id="latest-project-title">Introducing <ul>BruinPlanner</ul>!</h2>
+                                <div id="latest-project-content">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

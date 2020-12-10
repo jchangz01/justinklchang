@@ -35,3 +35,38 @@
         line-height: 22px;
         color: lightgrey;
     }
+
+.project-section {
+    height: 100vh;
+    background-color: white;
+
+}
+    .project-section * {
+        color: black !important
+    }
+    .project-section-title {
+        margin: 0 26px;
+        font-size: 56px;
+        display: inline-block; 
+        color: black;
+
+    }
+    .project-section-title:before, :after{
+        border-bottom: 2px solid #000; 
+    }
+
+
+/* Styling for latest project section 
+/////////////////////////////////////*/
+#latest-project-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+#latest-project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
