@@ -1,9 +1,10 @@
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ImageGallery from 'react-image-gallery';
 import React from 'react'
 import '../css/Projects.css'
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 const images = [
   {
@@ -32,6 +33,62 @@ function NavBar (props) {
             </nav>
         </div>
     )
+}
+
+class LatestProject extends React.Component {
+    render () {
+            return (
+            <div className="project-section">
+                <div className="fade-in-4 width-size" id="latest">
+                    <div style={{paddingTop: "3vh"}}>
+                        <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
+                        <h1 className="project-section-title">Latest Project</h1>
+                        <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
+                    </div>
+                    <div id="latest-project-content">
+                        <div style={{flexBasis: "100%"}}>
+                            <h2 id="latest-project-title">Introducing <ul>BruinPlanner</ul>!</h2>
+                            <div id="latest-project-des">
+                                <div class="latest-project-left">
+                                    <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
+                                </div>
+                                <div class="latest-project-right">
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    </p>
+                                    <br></br>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    </p>
+                                    <br></br>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
+                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
+                                    est Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default class Contact extends React.Component {
@@ -63,63 +120,7 @@ export default class Contact extends React.Component {
                     </div>
                 </section>
                 <section>
-                    <div className="project-section">
-                        <div className="fade-in-4 width-size" id="latest">
-                            <div style={{paddingTop: "3vh"}}>
-                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
-                                <h1 className="project-section-title">Latest Project</h1>
-                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
-                            </div>
-                            <div style={{marginTop: "4vh"}}>
-                                <h2 id="latest-project-title">Introducing <ul>BruinPlanner</ul>!</h2>
-                                <div id="latest-project-content">
-                                    <div class="latest-project-left">
-                                        <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
-                                    </div>
-                                    <div class="latest-project-right">
-                                        <p>
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
-                                        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-                                        est Lorem ipsum dolor sit amet.
-                                        </p>
-                                        <br></br>
-                                        <p>
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
-                                        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-                                        est Lorem ipsum dolor sit amet.
-                                        </p>
-                                        <br></br>
-                                        <p>
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
-                                        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-                                        est Lorem ipsum dolor sit amet.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <LatestProject />
                 </section>
             </div>
         )
