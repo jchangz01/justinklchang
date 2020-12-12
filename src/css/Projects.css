@@ -68,5 +68,17 @@
 #latest-project-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    height: calc(95vh - 120px);
+}
+
+.latest-project-left {
+    flex-basis: 50%;
+    text-align: left;
+    
+}
+
+.latest-project-right {
+    flex-basis: 50%;
+
 }
