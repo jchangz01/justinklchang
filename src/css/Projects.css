@@ -39,11 +39,7 @@
 .project-section {
     height: 100vh;
     background-color: white;
-
 }
-    .project-section * {
-        color: black !important
-    }
     .project-section-title {
         margin: 0 26px;
         font-size: 56px;
@@ -64,6 +60,10 @@
     justify-content: center;
     align-items: center;    
 }
+
+#latest-project-content * {
+    color: black
+}
 #latest-project-title {
     font-size: 56px;
     letter-spacing: 1px;
@@ -72,8 +72,8 @@
 }
 
 #latest-project-stack {
-    margin-top: 24px;
-    font-size: 22px;
+    margin-top: 16px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     font-family: 'Roboto';
     text-align: center;
@@ -104,3 +104,24 @@
         font-size: 16px;
     }
 
+/* Styling for all projects section 
+/////////////////////////////////////*/
+#all-projects-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#all-projects-title {
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+#all-projects-subtitle {
+    letter-spacing: 1px;
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: gray;
+}

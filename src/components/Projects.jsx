@@ -4,8 +4,6 @@ import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-
 
 const images = [
   {
@@ -38,49 +36,60 @@ function NavBar (props) {
 
 class LatestProject extends React.Component {
     render () {
-            return (
-            
-                    <div id="latest-project-content">
-                        <div style={{flexBasis: "100%"}}>
-                            <h2 id="latest-project-title">Introducing <ul><b>BruinPlanner</b></ul>!</h2>
-                            <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
-                            <div id="latest-project-des">
-                                <div class="latest-project-left">
-                                    <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
-                                </div>
-                                <div class="latest-project-right">
-                                    <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    </p>
-                                    <br></br>
-                                    <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    </p>
-                                    <br></br>
-                                    <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
-                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-                                    est Lorem ipsum dolor sit amet.
-                                    </p>
-                                </div>
-                            </div>
+        return (
+            <div id="latest-project-content">
+                <div style={{flexBasis: "100%"}}>
+                    <h2 id="latest-project-title">Introducing <span style={{color: "#2774AE"}}>BruinPlanner!</span></h2>
+                    <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
+                    <div id="latest-project-des">
+                        <div class="latest-project-left">
+                            <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
+                        </div>
+                        <div class="latest-project-right">
+                            <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            </p>
+                            <br></br>
+                            <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            </p>
+                            <br></br>
+                            <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
+                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
+                            est Lorem ipsum dolor sit amet.
+                            </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+class ProjectsGrid extends React.Component {
+    render () {
+        return (
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         )
     }
 }
@@ -122,6 +131,17 @@ export default class Contact extends React.Component {
                                 <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
                             </div>
                             <LatestProject />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div className="project-section" style={{backgroundColor: "black"}}>
+                        <div id="all-projects-content" className="fade-in-4 width-size">
+                            <div style={{flexBasis: "100%", textAlign: 'center'}}>
+                                <h1 id="all-projects-title">Other projects</h1>
+                                <h2 id="all-projects-subtitle">Hover over each thumbnail to learn more!</h2>
+                                <ProjectsGrid />
+                            </div>
                         </div>
                     </div>
                 </section>
