@@ -1,10 +1,11 @@
-import { faCaretDown, faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { Link as ScrollLink } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ImageGallery from 'react-image-gallery';
 import React from 'react'
 import '../css/Projects.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+
 
 const images = [
   {
@@ -38,16 +39,11 @@ function NavBar (props) {
 class LatestProject extends React.Component {
     render () {
             return (
-            <div className="project-section">
-                <div className="fade-in-4 width-size" id="latest">
-                    <div style={{paddingTop: "3vh"}}>
-                        <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
-                        <h1 className="project-section-title">Latest Project</h1>
-                        <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
-                    </div>
+            
                     <div id="latest-project-content">
                         <div style={{flexBasis: "100%"}}>
-                            <h2 id="latest-project-title">Introducing <ul>BruinPlanner</ul>!</h2>
+                            <h2 id="latest-project-title">Introducing <ul><b>BruinPlanner</b></ul>!</h2>
+                            <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
                             <div id="latest-project-des">
                                 <div class="latest-project-left">
                                     <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
@@ -85,8 +81,6 @@ class LatestProject extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         )
     }
 }
@@ -120,7 +114,16 @@ export default class Contact extends React.Component {
                     </div>
                 </section>
                 <section>
-                    <LatestProject />
+                    <div className="project-section">
+                        <div className="fade-in-4 width-size" id="latest">
+                            <div style={{paddingTop: "3vh"}}>
+                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
+                                <h1 className="project-section-title">Latest Project</h1>
+                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
+                            </div>
+                            <LatestProject />
+                        </div>
+                    </div>
                 </section>
             </div>
         )

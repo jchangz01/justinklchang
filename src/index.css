@@ -38,6 +38,11 @@ ul {
   display: inline;
 }
 
+b {
+  font-weight: 900;
+  display: inline;
+}
+
 
 /*////////////////////////////
 General styling for all pages

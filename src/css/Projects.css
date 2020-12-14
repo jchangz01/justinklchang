@@ -65,8 +65,16 @@
     align-items: center;    
 }
 #latest-project-title {
-    font-size: 30px;
+    font-size: 56px;
     letter-spacing: 1px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+#latest-project-stack {
+    margin-top: 24px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
     font-family: 'Roboto';
     text-align: center;
 }
@@ -79,6 +87,7 @@
     width: 48%;
     margin-right: 2%;
     display: inline-block;
+    margin-bottom: 1vh;
 }
     .img-gallery {
         width: 92%;
@@ -88,6 +97,7 @@
     width: 48%;
     margin-left: 2%;
     display: inline-block;
+    margin-bottom: 1vh;
 }
 
     .latest-project-right > p {
