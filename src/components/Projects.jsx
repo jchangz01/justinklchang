@@ -43,36 +43,35 @@ class LatestProject extends React.Component {
                     <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
                     <div id="latest-project-des">
                         <div class="latest-project-left">
-                            <div style={{margin:"40px 0"}}><ImageGallery items={images}/></div> 
+                            <ImageGallery items={images}/>
                         </div>
                         <div class="latest-project-right">
                             <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            Committing to a four year university may find seem like a major accomplishment and stress reliever 
+                            as you no longer have to deal with high school; however, the reality is that the real pressure is only 
+                            getting started. At a prestigious college such as the University of California, Los-Angeles, not only do 
+                            students have to compete and strive for good grades, they have to worry about clubs, and more importantly, 
+                            the classes they need to take to graduate. As a student myself, I understand that coursework 
+                            itself is taxing enough; I don’t want to have to constantly meet up with counselors, 
+                            maintain an updated Google doc, and surf through the UCLA coursework website to formulate a 
+                            four-year plan that will inevitably change throughout my years at college. 
                             </p>
                             <br></br>
                             <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                            BruinPlanner is an interactive application for UCLA students to help design a 4-year plan. UCLA has always 
+                            struggled with presenting course requirements and requisites due to them having too many websites with 
+                            unnecessary information such as outdated 4-year plans. Instead, if students had an interactive 4-year planner, 
+                            where they could select their major and visually see what the required classes and their respective 
+                            prereqs are, it would save them a lot of time and pain. This website allows students to create an account 
+                            that would give them access to 4-year planners based on a major in which they could organize their classes 
+                            based on requirements.
                             </p>
                             <br></br>
                             <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
-                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-                            est Lorem ipsum dolor sit amet.
+                            BruinPlanner is my first ever full stack web application! It was created using the MERN stack and extracts UCLA course
+                            data from the UCLA DevX Api (<a target="_blank" rel="noreferrer" href="http://api.ucladevx.com/" style={{color: "blue"}}>http://api.ucladevx.com/</a>). In addition, the website utilizes many open-source npm packages/libraries 
+                            such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving only very minor assistance 
+                            from my UCLA Computer Science Peers. 
                             </p>
                         </div>
                     </div>
@@ -140,6 +139,7 @@ export default class Contact extends React.Component {
                             <div style={{flexBasis: "100%", textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Other projects</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail to learn more!</h2>
+                                <hr style={{marginTop: "32px"}}></hr>
                                 <ProjectsGrid />
                             </div>
                         </div>

@@ -81,27 +81,33 @@
 
 #latest-project-des {
     width: 1180px;
+    padding-bottom: 8vh;
 }
 
 .latest-project-left {
     width: 48%;
     margin-right: 2%;
     display: inline-block;
-    margin-bottom: 1vh;
+    margin-top: 3vh;
+    padding-top: 32px;
+    vertical-align: top;
 }
     .img-gallery {
         width: 92%;
+        margin-bottom: 30px;
     }
 
 .latest-project-right {
     width: 48%;
+    height: 100%;
     margin-left: 2%;
     display: inline-block;
-    margin-bottom: 1vh;
+    margin-top: 3vh;
 }
 
     .latest-project-right > p {
         font-size: 16px;
+        line-height: 18px;
     }
 
 /* Styling for all projects section 
