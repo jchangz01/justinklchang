@@ -4,6 +4,7 @@ import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import projectInfo from './project_info.json'
 
 const images = [
   {
@@ -42,10 +43,10 @@ class LatestProject extends React.Component {
                     <h2 id="latest-project-title">Introducing <span style={{color: "#2774AE"}}>BruinPlanner!</span></h2>
                     <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
                     <div id="latest-project-des">
-                        <div class="latest-project-left">
+                        <div className="latest-project-left">
                             <ImageGallery items={images}/>
                         </div>
-                        <div class="latest-project-right">
+                        <div className="latest-project-right">
                             <p>
                             Committing to a four year university may find seem like a major accomplishment and stress reliever 
                             as you no longer have to deal with high school; however, the reality is that the real pressure is only 
@@ -83,11 +84,67 @@ class LatestProject extends React.Component {
 
 class ProjectsGrid extends React.Component {
     render () {
+        /* create grid entries for each project */
+        var gridRows = [];
+        var rowEntry = [];
+        var rowIndex = 0;
+        for (var i = 0; i < this.props.data.length; i++)
+        {
+            if ( i % 3 === 0 && i != 0 ) {
+                gridRows[rowIndex] = rowEntry;
+                rowIndex++;
+                rowEntry = [];
+            }
+            rowEntry[i % 3] = (
+                <div className="all-projects-entry">
+                    <img src={projectInfo[i]} style={{width: "100%", height: "100%"}}></img>
+                </div>
+            )
+        }
+        if (rowEntry.length > 0) {
+            gridRows[rowIndex] = rowEntry;
+        }
+        
         return (
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div id="all-projects-grid"> 
+                { gridRows.map ( row => {
+                    <div className="all-projects-row">
+                        {row}
+                    </div>
+                })}
+                <div className="all-projects-row">
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/seed/picsum/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/1/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/1015/1000/600/" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                </div>
+                <div className="all-projects-row">
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/27/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/20/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/32/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                </div>
+                <div className="all-projects-row">
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/seed/picsum/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/10/300/200" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                    <div className="all-projects-entry">
+                        <img src="https://picsum.photos/id/1015/1000/600/" style={{width: "100%", height: "100%"}}></img>
+                    </div>
+                </div>
             </div>
         )
     }
@@ -105,7 +162,7 @@ export default class Contact extends React.Component {
                         <div className="project-main-content">
                             <h1 id="project-main-title">Projects</h1>
                             <h2 id="project-main-subtitle">Check out some of my personal works!</h2>
-                            <hr class="project-main-linebr"></hr>
+                            <hr className="project-main-linebr"></hr>
                             <p id="project-main-des">
                                 The projects displayed below are a collection of some of my works. These can range from personal projects, 
                                 group projects created during hackathons, or assigned school works. Each project below will have a 
@@ -137,10 +194,10 @@ export default class Contact extends React.Component {
                     <div className="project-section" style={{backgroundColor: "black"}}>
                         <div id="all-projects-content" className="fade-in-4 width-size">
                             <div style={{flexBasis: "100%", textAlign: 'center'}}>
-                                <h1 id="all-projects-title">Other projects</h1>
+                                <h1 id="all-projects-title">Project Gallery</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail to learn more!</h2>
-                                <hr style={{marginTop: "32px"}}></hr>
-                                <ProjectsGrid />
+                                <hr style={{width: "640px", margin: "24px auto"}}></hr>
+                                <ProjectsGrid data="project_info"/>
                             </div>
                         </div>
                     </div>
