@@ -148,6 +148,22 @@
 .all-projects-entry {
     flex-basis: 33.3333%;
     height: 20vh;
-    background-color: white; 
     position: relative;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
+    .all-projects-entry:hover img{
+        opacity: 0.6;
+    }
+    .all-projects-entry-selected {
+        position: absolute;
+        font-size: 2vw;
+        top: 8vh;
+        z-index: 1;
+        width: 16.16vw;
+    }
+        .all-projects-entry-selected * {
+            color: black;
+            letter-spacing: 1px;
+        }

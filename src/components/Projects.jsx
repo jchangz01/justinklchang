@@ -3,7 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faBoxTissue, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import projectInfo from './project_info.json'
 
 const images = [
@@ -82,69 +82,60 @@ class LatestProject extends React.Component {
     }
 }
 
+class ProjectEntry extends React.Component {
+    state = {
+        active: null
+    }
+
+    triggerActive = (index) => {
+        this.setState({active: index})
+    }
+
+    render() {
+        return (
+            <div className="all-projects-entry" onMouseEnter={() => { this.triggerActive(this.props.index) }} onMouseLeave={() => { this.setState({active: null}) }}>
+                { this.state.active !== null ? 
+                    <React.Fragment>
+                        <div className="all-projects-entry-selected">
+                            <h4>Project Title</h4>
+                        </div> 
+                    </React.Fragment>    
+                : null }
+                <img src={this.props.projectInfo} style={{width: "100%", height: "100%"}}></img>
+            </div>
+        )
+    }
+}
+
 class ProjectsGrid extends React.Component {
     render () {
         /* create grid entries for each project */
-        var gridRows = [];
         var rowEntry = [];
         var rowIndex = 0;
+        var gridRows = [];
         for (var i = 0; i < this.props.data.length; i++)
         {
-            if ( i % 3 === 0 && i != 0 ) {
+            if ( i % 3 === 0 && i !== 0 ) {
                 gridRows[rowIndex] = rowEntry;
                 rowIndex++;
                 rowEntry = [];
             }
             rowEntry[i % 3] = (
-                <div className="all-projects-entry">
-                    <img src={projectInfo[i]} style={{width: "100%", height: "100%"}}></img>
-                </div>
+                <ProjectEntry index={i} projectInfo={this.props.data[i]} />
             )
         }
-        if (rowEntry.length > 0) {
+        if (rowEntry.length > 0)
             gridRows[rowIndex] = rowEntry;
-        }
-        
+
         return (
             <div id="all-projects-grid"> 
                 { gridRows.map ( row => {
-                    <div className="all-projects-row">
-                        {row}
-                    </div>
+                    return (
+                        <div className="all-projects-row">
+                            {row}
+                        </div>
+                    )
                 })}
-                <div className="all-projects-row">
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/seed/picsum/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/1/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/1015/1000/600/" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                </div>
-                <div className="all-projects-row">
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/27/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/20/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/32/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                </div>
-                <div className="all-projects-row">
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/seed/picsum/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/10/300/200" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                    <div className="all-projects-entry">
-                        <img src="https://picsum.photos/id/1015/1000/600/" style={{width: "100%", height: "100%"}}></img>
-                    </div>
-                </div>
             </div>
         )
     }
@@ -197,7 +188,7 @@ export default class Contact extends React.Component {
                                 <h1 id="all-projects-title">Project Gallery</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail to learn more!</h2>
                                 <hr style={{width: "640px", margin: "24px auto"}}></hr>
-                                <ProjectsGrid data="project_info"/>
+                                <ProjectsGrid data={projectInfo}/>
                             </div>
                         </div>
                     </div>
