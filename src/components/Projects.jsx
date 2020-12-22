@@ -3,23 +3,11 @@ import ImageGallery from 'react-image-gallery';
 import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBoxTissue, faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import projectInfo from './project_info.json'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import data from './api/project_info.json'
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
-];
+const LatestProjectInfo = data[0]; //store latest project  
+const projectInfo = data.slice(1, data.length) //store remaining projects
 
 function NavBar (props) {
     return (
@@ -35,79 +23,74 @@ function NavBar (props) {
     )
 }
 
+function ProjectDescription (props) {
+    console.log (props.project)
+    return (
+        <React.Fragment>
+            <h2 className="project-title">Introducing <span style={{color: props.project.primaryColor}}>{props.project.name}!</span></h2>
+            <h3 className="project-stack">Tech Stack: {props.project.stack}</h3>
+            <div className={props.latest ? "width-size bottom-pad-med" : null}>
+                <div className="project-left-section">
+                    <ImageGallery items={props.project.images}/>
+                </div>
+                <div className="project-right-section">
+                {
+                    props.project.description.map ( paragraph => {
+                        return (
+                            <React.Fragment>
+                                <p>{paragraph}</p>  
+                                <br></br>
+                            </React.Fragment>
+                        )
+                    })
+                }
+                </div>
+            </div>
+        </React.Fragment>
+    )
+}
+
 class LatestProject extends React.Component {
     render () {
         return (
             <div id="latest-project-content">
                 <div style={{flexBasis: "100%"}}>
-                    <h2 id="latest-project-title">Introducing <span style={{color: "#2774AE"}}>BruinPlanner!</span></h2>
-                    <h3 id="latest-project-stack">Tech Stack: MongoDB, ExpressJS, NodeJS, ReactJS</h3>
-                    <div id="latest-project-des">
-                        <div className="latest-project-left">
-                            <ImageGallery items={images}/>
-                        </div>
-                        <div className="latest-project-right">
-                            <p>
-                            Committing to a four year university may find seem like a major accomplishment and stress reliever 
-                            as you no longer have to deal with high school; however, the reality is that the real pressure is only 
-                            getting started. At a prestigious college such as the University of California, Los-Angeles, not only do 
-                            students have to compete and strive for good grades, they have to worry about clubs, and more importantly, 
-                            the classes they need to take to graduate. As a student myself, I understand that coursework 
-                            itself is taxing enough; I don’t want to have to constantly meet up with counselors, 
-                            maintain an updated Google doc, and surf through the UCLA coursework website to formulate a 
-                            four-year plan that will inevitably change throughout my years at college. 
-                            </p>
-                            <br></br>
-                            <p>
-                            BruinPlanner is an interactive application for UCLA students to help design a 4-year plan. UCLA has always 
-                            struggled with presenting course requirements and requisites due to them having too many websites with 
-                            unnecessary information such as outdated 4-year plans. Instead, if students had an interactive 4-year planner, 
-                            where they could select their major and visually see what the required classes and their respective 
-                            prereqs are, it would save them a lot of time and pain. This website allows students to create an account 
-                            that would give them access to 4-year planners based on a major in which they could organize their classes 
-                            based on requirements.
-                            </p>
-                            <br></br>
-                            <p>
-                            BruinPlanner is my first ever full stack web application! It was created using the MERN stack and extracts UCLA course
-                            data from the UCLA DevX Api (<a target="_blank" rel="noreferrer" href="http://api.ucladevx.com/" style={{color: "blue"}}>http://api.ucladevx.com/</a>). In addition, the website utilizes many open-source npm packages/libraries 
-                            such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving only very minor assistance 
-                            from my UCLA Computer Science Peers. 
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectDescription latest={true} project={LatestProjectInfo}/>
                 </div>
             </div>
         )
     }
 }
 
-class ProjectEntry extends React.Component {
+function ProjectEntry (props) {
+    return (
+        <div className="all-projects-entry" onMouseEnter={() => { props.toggleActiveOn(props.index) }} onMouseLeave={() => { props.toggleActiveOff()}} onClick={() => props.onclick(props.index)}>
+            { props.active === props.index ? 
+                <React.Fragment>
+                    <div className="all-projects-entry-selected">
+                        <h4>{props.project.name}</h4>
+                        <p><ul>Learn more</ul></p>
+                    </div> 
+                </React.Fragment>    
+            : null }
+            <img src={props.project.thumbnail} style={{width: "100%", height: "100%"}}></img>
+        </div>
+    )
+}
+
+class ProjectsGrid extends React.Component {
     state = {
         active: null
     }
 
-    triggerActive = (index) => {
-        this.setState({active: index})
+    toggleActiveOn = (index) => {
+        this.setState({active: index}) 
     }
 
-    render() {
-        return (
-            <div className="all-projects-entry" onMouseEnter={() => { this.triggerActive(this.props.index) }} onMouseLeave={() => { this.setState({active: null}) }}>
-                { this.state.active !== null ? 
-                    <React.Fragment>
-                        <div className="all-projects-entry-selected">
-                            <h4>Project Title</h4>
-                        </div> 
-                    </React.Fragment>    
-                : null }
-                <img src={this.props.projectInfo} style={{width: "100%", height: "100%"}}></img>
-            </div>
-        )
+    toggleActiveOff = () => {
+        this.setState({active: null})
     }
-}
-
-class ProjectsGrid extends React.Component {
+    
     render () {
         /* create grid entries for each project */
         var rowEntry = [];
@@ -121,7 +104,14 @@ class ProjectsGrid extends React.Component {
                 rowEntry = [];
             }
             rowEntry[i % 3] = (
-                <ProjectEntry index={i} projectInfo={this.props.data[i]} />
+                <ProjectEntry 
+                    index={i} 
+                    active={this.state.active} 
+                    toggleActiveOn={this.toggleActiveOn} 
+                    toggleActiveOff={this.toggleActiveOff} 
+                    onclick={this.props.popupOn} 
+                    project={this.props.data[i]} 
+                />
             )
         }
         if (rowEntry.length > 0)
@@ -141,8 +131,33 @@ class ProjectsGrid extends React.Component {
     }
 }
 
+function PopUpPrompt (props) {
+    return (
+        <div className="popup">
+            <div className="popup white-overlay" onClick={props.onClick}/>
+            <div className="box">
+                <ProjectDescription latest={false} project={props.project}/>
+            </div>
+        </div>
+    )
+}
+
 export default class Contact extends React.Component {
+    state = {
+        messageIndex: null
+    }
+
+    triggerPopupOn = (index) => {
+        this.setState({messageIndex: index})
+        document.querySelector('body').classList.add('no-scroll') //prevents scrolling when pop-up is in view
+    }
+    triggerPopupOff = () => {
+        this.setState({messageIndex: null})
+        document.querySelector('body').classList.remove('no-scroll') //enables scrolling when pop-up is removed from view
+    }
+
     render() {
+        console.log(this.state.messageIndex)
         return (
             <div id="content-container" style={{height: "auto"}}>
                 <header>
@@ -182,13 +197,18 @@ export default class Contact extends React.Component {
                     </div>
                 </section>
                 <section>
-                    <div className="project-section" style={{backgroundColor: "black"}}>
-                        <div id="all-projects-content" className="fade-in-4 width-size">
-                            <div style={{flexBasis: "100%", textAlign: 'center'}}>
+                    {
+                        this.state.messageIndex !== null ? 
+                            <PopUpPrompt onClick={this.triggerPopupOff} project={projectInfo[this.state.messageIndex]} />
+                            : null
+                    }
+                    <div id="all-projects-content">
+                        <div className="fade-in-4 width-size" style={{maxWidth: "70vw"}}>
+                            <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Project Gallery</h1>
-                                <h2 id="all-projects-subtitle">Hover over each thumbnail to learn more!</h2>
-                                <hr style={{width: "640px", margin: "24px auto"}}></hr>
-                                <ProjectsGrid data={projectInfo}/>
+                                <h2 id="all-projects-subtitle">Hover over each thumbnail and click to learn more!</h2>
+                                <hr style={{width: "640px", margin: "3vh auto"}}></hr>
+                                <ProjectsGrid data={projectInfo} popupOn={this.triggerPopupOn} popupOff={this.triggerPopupOff}/>
                             </div>
                         </div>
                     </div>

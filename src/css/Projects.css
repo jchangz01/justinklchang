@@ -61,62 +61,13 @@
     align-items: center;    
 }
 
-#latest-project-content * {
-    color: black
-}
-#latest-project-title {
-    font-size: 56px;
-    letter-spacing: 1px;
-    font-family: 'Roboto';
-    text-align: center;
-}
+#latest-project-content h2, #latest-project-content h3,  #latest-project-content p { color: black }
 
-#latest-project-stack {
-    margin-top: 16px;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    font-family: 'Roboto';
-    text-align: center;
-}
-
-#latest-project-des {
-    width: 1180px;
-    padding-bottom: 8vh;
-}
-
-.latest-project-left {
-    width: 48%;
-    margin-right: 2%;
-    display: inline-block;
-    margin-top: 3vh;
-    padding-top: 32px;
-    vertical-align: top;
-}
-    .img-gallery {
-        width: 92%;
-        margin-bottom: 30px;
-    }
-
-.latest-project-right {
-    width: 48%;
-    height: 100%;
-    margin-left: 2%;
-    display: inline-block;
-    margin-top: 3vh;
-}
-
-    .latest-project-right > p {
-        font-size: 16px;
-        line-height: 18px;
-    }
-
-/* Styling for all projects section 
+/* Styling for all projects section (gallery)
 /////////////////////////////////////*/
 #all-projects-content {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 16vh;
+    height: auto;
 }
 
 #all-projects-title {
@@ -133,37 +84,114 @@
 }
 
 #all-projects-grid {
-    width: 50vw;
+    width: 57vw;
     margin: 0 auto;
-    overflow-y: auto;
-    height: 60.1vh;
+    padding-bottom: 16vh;
 }
 
 .all-projects-row {
     display: flex;
     align-items: center;
     width: 100%;
+    text-align: center;
 }
 
 .all-projects-entry {
     flex-basis: 33.3333%;
-    height: 20vh;
+    height: 24vh;
     position: relative;
     background-color: white;
     cursor: pointer;
     transition: 0.3s;
 }
     .all-projects-entry:hover img{
-        opacity: 0.6;
+        opacity: 0.56;
     }
     .all-projects-entry-selected {
         position: absolute;
         font-size: 2vw;
-        top: 8vh;
+        top: 9vh;
         z-index: 1;
-        width: 16.16vw;
+        width: 19vw;
     }
         .all-projects-entry-selected * {
             color: black;
             letter-spacing: 1px;
         }
+        
+        .all-projects-entry-selected > p {
+            font-size: 0.92vw;
+        }
+
+
+/* Styling for popup when project entry is clicked */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.box {
+    position: relative;
+    width: 80vw;
+    z-index: 20;
+    margin: 0 auto;
+    height: auto;
+    max-height: 80vh;
+    margin-top: 10vh;
+    background: white;
+    overflow: auto;
+    padding: 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .box p, .box h2, .box h3 {
+        color: black;
+    }
+
+
+
+/*Styling for project description/showcase 
+/////////////////////////////////////////*/
+
+.project-title {
+    font-size: 56px;
+    letter-spacing: 1px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.project-stack {
+    margin-top: 16px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.project-left-section {
+    width: 48%;
+    margin-right: 2%;
+    display: inline-block;
+    margin-top: 3vh;
+    vertical-align: top;
+}
+    .img-gallery {
+        width: 92%;
+        margin-bottom: 30px;
+    }
+
+.project-right-section {
+    width: 48%;
+    height: 100%;
+    margin-left: 2%;
+    display: inline-block;
+    margin-top: 3vh;
+}
+
+    .project-right-section > p {
+        font-size: 16px;
+        line-height: 18px;
+    }
