@@ -73,7 +73,7 @@ function ProjectEntry (props) {
                     </div> 
                 </React.Fragment>    
             : null }
-            <img src={props.project.thumbnail} alt="error" style={{width: "100%", height: "100%"}} />
+            <img src={props.project.thumbnail} alt="error" style={{width: "100%", height: "100%"}} await />
         </div>
     )
 }

@@ -1,0 +1,47 @@
+#hire-main {
+    height: calc(100vh - 154px);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.hire-main-content {
+    flex-basis: 100%;
+    text-align: left;
+    position: relative;
+    line-height: 32px;
+}
+    .hire-main-content * {
+        color: gray;
+        font-family: 'Roboto';
+    }
+
+#hire-name {
+    font-family: 'Bebas Neue';
+    font-size: 56px;
+    letter-spacing: 2px;
+    line-height: 56px;
+}
+
+#hire-name ~ h3 {font-size: 16px;}
+
+#hire-advertise {
+    font-size: 18px;
+    width: 600px;
+    color: gray
+}
+
+#hire-advertise ~ h4 *, #hire-advertise ~ h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.hire-social {
+    font-size: 32px;
+    margin-right: 16px;
+    transition: 0.3s;
+}
+.hire-social * { color: white }
+
+.hire-social:hover  { opacity: 0.3; }
