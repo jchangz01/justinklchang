@@ -15,9 +15,9 @@ function NavBar (props) {
             <nav id="navbar-contents">
                 <ul><a href='/about'>About</a></ul>
                 <ul><a href='/contact'>Contact</a></ul>
-                <ul><a id="logo" href='/'></a></ul>
+                <ul><a id="logo" href='/'>JC</a></ul>
                 <ul><a href="/projects">Projects</a></ul>
-                <ul><a>MISC</a></ul>
+                <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -29,7 +29,7 @@ function ProjectDescription (props) {
         <React.Fragment>
             <h2 className="project-title">Introducing <span style={{color: props.project.primaryColor}}>{props.project.name}!</span></h2>
             <h3 className="project-stack">Tech Stack: {props.project.stack}</h3>
-            <div className={props.latest ? "width-size bottom-pad-med" : null}>
+            <div className={props.latest ? "width-size" : null}>
                 <div className="project-left-section">
                     <ImageGallery items={props.project.images}/>
                 </div>
@@ -73,7 +73,7 @@ function ProjectEntry (props) {
                     </div> 
                 </React.Fragment>    
             : null }
-            <img src={props.project.thumbnail} style={{width: "100%", height: "100%"}}></img>
+            <img src={props.project.thumbnail} alt="error" style={{width: "100%", height: "100%"}} />
         </div>
     )
 }
@@ -135,7 +135,7 @@ function PopUpPrompt (props) {
     return (
         <div className="popup">
             <div className="popup white-overlay" onClick={props.onClick}/>
-            <div className="box">
+            <div className="box animate">
                 <ProjectDescription latest={false} project={props.project}/>
             </div>
         </div>
@@ -163,7 +163,7 @@ export default class Contact extends React.Component {
                 <header>
                     <NavBar/>
                 </header>
-                <section>   
+                <section style={{"width": "97.88vw"}}>   
                     <div className="width-size fade-in-4" id="project-main"> 
                         <div className="project-main-content">
                             <h1 id="project-main-title">Projects</h1>

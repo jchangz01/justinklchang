@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/About.css'
-import profile from './images/about-profile.JPG'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons'
 
@@ -12,7 +11,7 @@ function NavBar (props) {
                 <ul><a href='/contact'>Contact</a></ul>
                 <ul><a id="logo" href='/'></a></ul>
                 <ul><a href="/projects">Projects</a></ul>
-                <ul><a>MISC</a></ul>
+                <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -28,7 +27,7 @@ export default class Contact extends React.Component {
                 <section>
                     <div className="width-size fade-in-4" id="about-main">
                         <div className="about-main-content" style={{textAlign: "right"}}>
-                            <img className="about-main-pic" src={profile} alt="Did not load, please refresh"/>
+                            <img className="about-main-pic" src={'images/about-profile.JPG'} alt="Did not load, please refresh"/>
                         </div>
                         <div class="about-main-content">
                             <div style={{marginLeft: "40px"}}>

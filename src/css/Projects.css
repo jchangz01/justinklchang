@@ -109,8 +109,8 @@
     }
     .all-projects-entry-selected {
         position: absolute;
-        font-size: 2vw;
-        top: 9vh;
+        font-size: 2.5vw;
+        top: 8.4vh;
         z-index: 1;
         width: 19vw;
     }
@@ -146,7 +146,11 @@
     overflow: auto;
     padding: 2vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
+  
+
+
     .box p, .box h2, .box h3 {
         color: black;
     }

@@ -12,7 +12,7 @@ function NavBar (props) {
                 <ul><a href='/contact'>Contact</a></ul>
                 <ul><a id="logo" href='/'></a></ul>
                 <ul><a href="/projects">Projects</a></ul>
-                <ul><a>MISC</a></ul>
+                <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
         </div>
     )

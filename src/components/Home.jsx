@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/Home.css'
-import profile from './images/home-profile.png'
 
 function NavBar (props) {
     return (
@@ -10,7 +9,7 @@ function NavBar (props) {
                 <ul><a href='/contact'>Contact</a></ul>
                 <ul><a id="logo"></a></ul>
                 <ul><a href='/projects'>Projects</a></ul>
-                <ul><a>MISC</a></ul>
+                <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -35,7 +34,7 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                         <div class="home-main-content">
-                            <img src={profile} alt="Did not load, please refresh" className="home-main-pic float"/>
+                            <img src={'images/home-profile.png'} alt="Did not load, please refresh" className="home-main-pic float"/>
                             <div className="home-main-circ float">
                                 <div className="home-main-subcirc"></div>
                             </div>
