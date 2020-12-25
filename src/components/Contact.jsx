@@ -10,7 +10,7 @@ function NavBar (props) {
             <nav id="navbar-contents">
                 <ul><a href='/about'>About</a></ul>
                 <ul><a href='/contact'>Contact</a></ul>
-                <ul><a id="logo" href='/'></a></ul>
+                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={'/images/portfolio_logo_black.svg'}/></a></ul>
                 <ul><a href="/projects">Projects</a></ul>
                 <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
