@@ -170,15 +170,19 @@ export default class Contact extends React.Component {
                             <h2 id="project-main-subtitle">Check out some of my personal works!</h2>
                             <hr className="project-main-linebr"></hr>
                             <p id="project-main-des">
-                                The projects displayed below are a collection of some of my works. These can range from personal projects, 
-                                group projects created during hackathons, or assigned school works. Each project below will have a 
-                                description, the associated source code, and the coding languages/tech stack used to develop the product. 
-                                Some projects will have links to the complete product if it is hosted online. Please note that most of 
-                                these projects are a work in progress meaning they are not perfect and improvements can be made. 
-                                In contrast to the previous statement, I like to consider my projects as statements of mastery/experience 
-                                in a particular programming language(s). Overall, I had lots of fun, gained tons of knowledge, and exceeded many of 
-                                my learning outcomes I had in mind while creating these projects!
-                                Click the arrow below to check out my latest piece of work and navigate below this to view a general display of all my works.
+                                The projects displayed below are a collection of some of my works. 
+                                These can range from personal projects, group projects created 
+                                during hackathons, or assigned school works. Each project below will 
+                                be accompanied by its description, the associated source code, and the 
+                                coding languages/tech stack used to develop the product. Some projects 
+                                will have links to the complete product if it is hosted online. Please 
+                                note that most of these projects are a work in progress meaning they are 
+                                not perfect and improvements can be made. Supporting my previous statement, 
+                                I consider my projects as statements of experience in a particular 
+                                programming language(s). Overall, I had lots of fun, gained tons of knowledge, 
+                                nd exceeded many of the learning outcomes I had in mind while creating these 
+                                projects! Click the arrow below to check out my latest piece of work and 
+                                navigate below that to view a gallery of all my works.
                             </p>
                             <ScrollLink to="latest" spy={true} smooth={true} duration={320}><FontAwesomeIcon className="scroll-down-icon" icon={faCaretDown}/></ScrollLink>
                         </div>

@@ -3,25 +3,29 @@
       "name": "BruinPlanner",
       "primaryColor": "#2774AE",
       "stack": "MongoDB, ExpressJS, NodeJS, ReactJS",
-      "thumbnail": "https://picsum.photos/id/1018/1000/600/",
-      "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-      ],
+      "thumbnail": "images/projects/BruinPlanner/thumbnail.jpg",
+    "images": [
+      {
+        "original": "images/projects/BruinPlanner/thumbnail.jpg",
+        "thumbnail": "images/projects/BruinPlanner/thumbnail.jpg"
+      },
+      {
+        "original": "images/projects/BruinPlanner/2.jpg",
+        "thumbnail": "images/projects/BruinPlanner/2.jpg"
+      },
+      {
+        "original": "images/projects/BruinPlanner/3.jpg",
+        "thumbnail": "images/projects/BruinPlanner/3.jpg"
+      },
+      {
+        "original": "images/projects/BruinPlanner/4.jpg",
+        "thumbnail": "images/projects/BruinPlanner/4.jpg"
+      }
+    ],
       "description": [
-          "Committing to a four year university may find seem like a major accomplishment and stress reliever as you no longer have to deal with high school; however, the reality is that the real pressure is only getting started. At a prestigious college such as the University of California, Los-Angeles, not only do students have to compete and strive for good grades, they have to worry about clubs, and more importantly, the classes they need to take to graduate. As a student myself, I understand that coursework itself is taxing enough; I don’t want to have to constantly meet up with counselors, maintain an updated Google doc, and surf through the UCLA coursework website to formulate a four-year plan that will inevitably change throughout my years at college.",
-          "BruinPlanner is an interactive application for UCLA students to help design a 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information such as outdated 4-year plans. Instead, if students had an interactive 4-year planner, where they could select their major and visually see what the required classes and their respective prereqs are, it would save them a lot of time and pain. This website allows students to create an account that would give them access to 4-year planners based on a major in which they could organize their classes based on requirements.",
-          "BruinPlanner is my first ever full stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX Api (http://api.ucladevx.com/). In addition, the website utilizes many open-source npm packages/libraries such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving only very minor assistance from my UCLA Computer Science Peers."
+        "Committing to a 4-year university may seem like a major accomplishment and stress reliever as you no longer have to deal with high school; however, the reality is that the pressure is only getting started. At a prestigious college such as the University of California, Los-Angeles, not only do students have to compete and strive for good grades, they have to worry about clubs, and more importantly, the classes they need to take to graduate. As a student myself, I understand that coursework itself is taxing enough; I don’t want to have to constantly meet up with counselors, maintain an updated Google doc, and surf through the UCLA coursework website to formulate a four-year plan that will inevitably change throughout my years at college.",
+        "BruinPlanner is an interactive application for UCLA students to design a visual 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information such as outdated 4-year plans. Instead, if students had an interactive 4-year planner, where they can select their major and visually see what the required classes are with their respective prereqs, it would save them a lot of time and pain. This website allows students to create an account that would give them access to 4-year planners based on majors in which they could organize their classes based on requirements.",
+        "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). In addition, the website utilizes many open-source npm packages/libraries such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving very minor assistance from my UCLA Computer Science Peers."
       ],
       "sourceCodeLink": "",
       "projectLink": ""
@@ -133,7 +137,7 @@
     "description": [
         "Kotagion is a survival game that revolves around the main character, Socrates exterminating bacteria. Brief lore of the game is as follows, Dr. Evyyl has been trying to breed trillions of dangerous bacteria to release into the world’s public restrooms. Socrates, an amateur bacteriologist has agreed to be shrunk into microscopic proportions and deposited into a petri dish to exterminate the bacteria before they can be bred. As a player, you are to control Socrates and exterminate as many bacteria as possible.",
         "The ultimate task of Kontagion is to achieve the highest round or score. For every bacteria you exterminate, you are awarded a set number of points. Upon killing all bacteria in a petri dish, you will advance to a more infected petri dish. Throughout each round, random power-ups will appear to grant you more score or refill Socrate’s ammunition. As mentioned above, Kontagion is a survival game, so good luck staying alive!",
-        "This game was created for my data structures and algorithm class (CS32) to demonstrate my understanding of polymorphism and inheritance in C++. For example, all objects in this game (Socrates, Bacteria, etc.)  derive from an abstract base class that defines methods that identify positioning, health (if valid), and more. In this project, I was only responsible for writing code for the logic and functionality of the game; all sprite designs and some code were provided by the instructor."
+        "This game was created for my data structures and algorithms class (CS32) to demonstrate my understanding of polymorphism and inheritance in C++. For example, all objects in this game (Socrates, Bacteria, etc.) derive from an abstract base class that defines methods that identify positioning, health (if valid), and more. In this project, I was only responsible for writing code for the logic and functionality of the game. All sprite designs and some code were provided by the instructor."
     ]  
   },
   {

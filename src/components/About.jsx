@@ -34,7 +34,7 @@ export default class Contact extends React.Component {
                                 <h1 className="about-main-title">About Me</h1>
                                 <hr className="about-main-linebreak"></hr>
                                 <p className="about-main-paragraph">
-                                    Hello! My name is <b>Justin Kyle Chang</b>. I am a 2nd-year student at UCLA pursuing a 
+                                    Hello! My name is <b>Justin Kyle Chang</b>. I am a 2nd-year student at UCLA (from the Bay Area) pursuing a 
                                     B.E. degree in Computer Science and aspiring to be a future software engineer. 
                                 </p>
                                 <p className="about-main-paragraph">
