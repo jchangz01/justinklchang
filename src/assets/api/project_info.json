@@ -3,23 +3,23 @@
       "name": "BruinPlanner",
       "primaryColor": "#2774AE",
       "stack": "MongoDB, ExpressJS, NodeJS, ReactJS",
-      "thumbnail": "images/projects/BruinPlanner/thumbnail.jpg",
+      "thumbnail": "project_images/BruinPlanner/thumbnail.jpg",
     "images": [
       {
-        "original": "images/projects/BruinPlanner/thumbnail.jpg",
-        "thumbnail": "images/projects/BruinPlanner/thumbnail.jpg"
+        "original": "project_images/BruinPlanner/thumbnail.jpg",
+        "thumbnail": "project_images/BruinPlanner/thumbnail.jpg"
       },
       {
-        "original": "images/projects/BruinPlanner/2.jpg",
-        "thumbnail": "images/projects/BruinPlanner/2.jpg"
+        "original": "project_images/BruinPlanner/2.jpg",
+        "thumbnail": "project_images/BruinPlanner/2.jpg"
       },
       {
-        "original": "images/projects/BruinPlanner/3.jpg",
-        "thumbnail": "images/projects/BruinPlanner/3.jpg"
+        "original": "project_images/BruinPlanner/3.jpg",
+        "thumbnail": "project_images/BruinPlanner/3.jpg"
       },
       {
-        "original": "images/projects/BruinPlanner/4.jpg",
-        "thumbnail": "images/projects/BruinPlanner/4.jpg"
+        "original": "project_images/BruinPlanner/4.jpg",
+        "thumbnail": "project_images/BruinPlanner/4.jpg"
       }
     ],
       "description": [
@@ -34,19 +34,19 @@
     "name": "ScribblMath",
     "primaryColor": "#61dbfb",
     "stack": "MySQL, ExpressJS, NodeJS, ReactJS",
-    "thumbnail": "images/projects/ScribblMath/thumbnail.jpg",
+    "thumbnail": "project_images/ScribblMath/thumbnail.jpg",
     "images": [
       {
-        "original": "images/projects/ScribblMath/thumbnail.jpg",
-        "thumbnail": "images/projects/ScribblMath/thumbnail.jpg"
+        "original": "project_images/ScribblMath/thumbnail.jpg",
+        "thumbnail": "project_images/ScribblMath/thumbnail.jpg"
       },
       {
-        "original": "images/projects/ScribblMath/2.jpg",
-        "thumbnail": "images/projects/ScribblMath/2.jpg"
+        "original": "project_images/ScribblMath/2.jpg",
+        "thumbnail": "project_images/ScribblMath/2.jpg"
       },
       {
-        "original": "images/projects/ScribblMath/3.jpg",
-        "thumbnail": "images/projects/ScribblMath/3.jpg"
+        "original": "project_images/ScribblMath/3.jpg",
+        "thumbnail": "project_images/ScribblMath/3.jpg"
       }
     ],
     "description": [
@@ -61,19 +61,19 @@
     "name": "Goober Eats",
     "primaryColor": "black",
     "stack": "C++",
-    "thumbnail": "images/projects/GooberEats/thumbnail.jpg",
+    "thumbnail": "project_images/GooberEats/thumbnail.jpg",
     "images": [
         {
-          "original": "images/projects/GooberEats/thumbnail.jpg",
-          "thumbnail": "images/projects/GooberEats/thumbnail.jpg"
+          "original": "project_images/GooberEats/thumbnail.jpg",
+          "thumbnail": "project_images/GooberEats/thumbnail.jpg"
         },
         {
-          "original": "images/projects/GooberEats/2.jpg",
-          "thumbnail": "images/projects/GooberEats/2.jpg"
+          "original": "project_images/GooberEats/2.jpg",
+          "thumbnail": "project_images/GooberEats/2.jpg"
         },
         {
-          "original": "images/projects/GooberEats/3.jpg",
-          "thumbnail": "images/projects/GooberEats/3.jpg"
+          "original": "project_images/GooberEats/3.jpg",
+          "thumbnail": "project_images/GooberEats/3.jpg"
         }
     ],
     "description": [
@@ -88,19 +88,19 @@
     "name": "BruinDining+",
     "primaryColor": "#03A9F4",
     "stack": "Firebase, NodeJS, React Native",
-    "thumbnail": "images/projects/BruinDining+/thumbnail.jpg",
+    "thumbnail": "project_images/BruinDining+/thumbnail.jpg",
     "images": [
         {
-          "original": "images/projects/BruinDining+/thumbnail.jpg",
-          "thumbnail": "images/projects/BruinDining+/thumbnail.jpg"
+          "original": "project_images/BruinDining+/thumbnail.jpg",
+          "thumbnail": "project_images/BruinDining+/thumbnail.jpg"
         },
         {
-          "original": "images/projects/BruinDining+/2.jpg",
-          "thumbnail": "images/projects/BruinDining+/2.jpg"
+          "original": "project_images/BruinDining+/2.jpg",
+          "thumbnail": "project_images/BruinDining+/2.jpg"
         },
         {
-          "original": "images/projects/BruinDining+/3.jpg",
-          "thumbnail": "images/projects/BruinDining+/3.jpg"
+          "original": "project_images/BruinDining+/3.jpg",
+          "thumbnail": "project_images/BruinDining+/3.jpg"
         }
     ],
     "description": [
@@ -115,23 +115,23 @@
     "name": "Kontagion",
     "primaryColor": "#8c8c5c",
     "stack": "C++",
-    "thumbnail": "images/projects/Kontagion/thumbnail.jpg",
+    "thumbnail": "project_images/Kontagion/thumbnail.jpg",
     "images": [
         {
-          "original": "images/projects/Kontagion/thumbnail.jpg",
-          "thumbnail": "images/projects/Kontagion/thumbnail.jpg"
+          "original": "project_images/Kontagion/thumbnail.jpg",
+          "thumbnail": "project_images/Kontagion/thumbnail.jpg"
         },
         {
-          "original": "images/projects/Kontagion/2.jpg",
-          "thumbnail": "images/projects/Kontagion/2.jpg"
+          "original": "project_images/Kontagion/2.jpg",
+          "thumbnail": "project_images/Kontagion/2.jpg"
         },
         {
-          "original": "images/projects/Kontagion/3.jpg",
-          "thumbnail": "images/projects/Kontagion/3.jpg"
+          "original": "project_images/Kontagion/3.jpg",
+          "thumbnail": "project_images/Kontagion/3.jpg"
         },
         {
-          "original": "images/projects/Kontagion/4.jpg",
-          "thumbnail": "images/projects/Kontagion/4.jpg"
+          "original": "project_images/Kontagion/4.jpg",
+          "thumbnail": "project_images/Kontagion/4.jpg"
         }
     ],
     "description": [
@@ -144,23 +144,23 @@
     "name": "Typing Mania",
     "primaryColor": "#B22222",
     "stack": "Block Code (HTML, CSS, Javascript)",
-    "thumbnail": "images/projects/TypingMania/thumbnail.jpg",
+    "thumbnail": "project_images/TypingMania/thumbnail.jpg",
     "images": [
         {
-          "original": "images/projects/TypingMania/thumbnail.jpg",
-          "thumbnail": "images/projects/TypingMania/thumbnail.jpg"
+          "original": "project_images/TypingMania/thumbnail.jpg",
+          "thumbnail": "project_images/TypingMania/thumbnail.jpg"
         },
         {
-          "original": "images/projects/TypingMania/2.jpg",
-          "thumbnail": "images/projects/TypingMania/2.jpg"
+          "original": "project_images/TypingMania/2.jpg",
+          "thumbnail": "project_images/TypingMania/2.jpg"
         },
         {
-          "original": "images/projects/TypingMania/3.jpg",
-          "thumbnail": "images/projects/TypingMania/3.jpg"
+          "original": "project_images/TypingMania/3.jpg",
+          "thumbnail": "project_images/TypingMania/3.jpg"
         },
         {
-          "original": "images/projects/TypingMania/4.jpg",
-          "thumbnail": "images/projects/TypingMania/4.jpg"
+          "original": "project_images/TypingMania/4.jpg",
+          "thumbnail": "project_images/TypingMania/4.jpg"
         }
     ],
     "description": [

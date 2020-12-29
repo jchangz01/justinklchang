@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Hire.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
+import navLogo from '../assets/images/portfolio_logo_black.svg'
 
 
 function NavBar (props) {
@@ -10,7 +11,7 @@ function NavBar (props) {
             <nav id="navbar-contents">
                 <ul><a href='/about'>About</a></ul>
                 <ul><a href='/contact'>Contact</a></ul>
-                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={'/images/portfolio_logo_black.svg'}/></a></ul>
+                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
                 <ul><a href='/projects'>Projects</a></ul>
                 <ul><a href='/hire'>Hire Me</a></ul>
             </nav>

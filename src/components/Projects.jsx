@@ -4,7 +4,8 @@ import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import data from './api/project_info.json'
+import navLogo from '../assets/images/portfolio_logo_black.svg'
+import data from '../assets/api/project_info.json'
 
 const LatestProjectInfo = data[0]; //store latest project  
 const projectInfo = data.slice(1, data.length) //store remaining projects
@@ -15,7 +16,7 @@ function NavBar (props) {
             <nav id="navbar-contents">
                 <ul><a href='/about'>About</a></ul>
                 <ul><a href='/contact'>Contact</a></ul>
-                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={'/images/portfolio_logo_black.svg'}/></a></ul>
+                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
                 <ul><a href="/projects">Projects</a></ul>
                 <ul><a href='/hire'>Hire Me</a></ul>
             </nav>
