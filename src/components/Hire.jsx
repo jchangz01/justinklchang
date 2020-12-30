@@ -8,11 +8,11 @@ function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/#about'>About</a></ul>
-                <ul><a href='/#contact'>Contact</a></ul>
-                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href='/#projects'>Projects</a></ul>
-                <ul><a href='/#hire'>Hire Me</a></ul>
+                <ul key="About"><a href='/#about'>About</a></ul>
+                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
+                <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
+                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -35,7 +35,7 @@ export default class Hire extends React.Component {
                             </div>
                             <div style={{marginBottom: "80px"}}>
                                 <h3 id="hire-advertise">Please consider hiring me by checking out my resume and reaching out to me!</h3>
-                                <h4><ul><a target="_blank" href="/#resume">Link to Resume</a></ul></h4>
+                                <h4><u><a target="_blank" href="/#resume">Link to Resume</a></u></h4>
                                 <h4>justinklchang@yahoo.com</h4>
                                 <h4>(707) 534-8001</h4>
                             </div>

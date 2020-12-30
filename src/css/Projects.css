@@ -194,3 +194,23 @@
         font-size: 16px;
         line-height: 18px;
     }
+
+.project-link {
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    padding: 8px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+    .project-link:hover{
+        opacity: 0.6;
+    }
+    .project-link * {
+        color: black
+    }
+    .project-link > h3 {
+        margin-left: 6px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }

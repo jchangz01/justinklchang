@@ -24,10 +24,10 @@
     ],
       "description": [
         "Committing to a 4-year university may seem like a major accomplishment and stress reliever as you no longer have to deal with high school; however, the reality is that the pressure is only getting started. At a prestigious college such as the University of California, Los-Angeles, not only do students have to compete and strive for good grades, they have to worry about clubs, and more importantly, the classes they need to take to graduate. As a student myself, I understand that coursework itself is taxing enough; I don’t want to have to constantly meet up with counselors, maintain an updated Google doc, and surf through the UCLA coursework website to formulate a four-year plan that will inevitably change throughout my years at college.",
-        "BruinPlanner is an interactive application for UCLA students to design a visual 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information such as outdated 4-year plans. Instead, if students had an interactive 4-year planner, where they can select their major and visually see what the required classes are with their respective prereqs, it would save them a lot of time and pain. This website allows students to create an account that would give them access to 4-year planners based on majors in which they could organize their classes based on requirements.",
-        "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). In addition, the website utilizes many open-source npm packages/libraries such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving very minor assistance from my UCLA Computer Science Peers."
+        "BruinPlanner is an interactive application for UCLA students to design a visual 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information. If students had an interactive 4-year planner, where they can select their major and visually see what the required classes are with their respective prereqs, it would save them a lot of time. This website allows students to create an account that would give them access to 4-year planners where they can organize their classes based on a major's graduation requirements.",
+        "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). The website also utilizes many open-source npm packages such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving very minor assistance from my UCLA CS Peers."
       ],
-      "sourceCodeLink": "",
+      "sourceCodeLink": "https://github.com/jchangz01/bruinplanner/",
       "projectLink": ""
   },
   {
@@ -54,8 +54,8 @@
         "Inspired from the lack of math functionality on most video chat platforms, our team created a web application focused on accommodating students and teachers alike for their math needs. ScribblMath is a video chatting platform that implements the staples of video chat like webcams and a chat, but also adds elements that are crucial to conveying complex mathematics in an easy way. These primarily include a virtual drawing board as well as LaTeX math typesetting support in the chat box! This means that your teacher will no longer have to spend hours trying to type out the correct math equation or attempt to draw the ten symbols that each of the equations has that you learned that day. It will look just like the way it does in your textbook!!",
         "The client-side of ScribblMath was constructed using the React framework, while the server-side was written using the Express framework. With a partner, we originally intented this project to be a submission for the Covid Hacks 2020 Hackathon but have decided to continue revising and improving it. My focus on this web application is the frontend UI."   
     ],
-    "sourceCodeLink": "",
-    "projectLink": ""
+    "sourceCodeLink": "https://github.com/AGuyWhoIsBored/scribblmath",
+    "projectLink": "https://scribblmath.duncanapple.io/"
   },
   {
     "name": "Goober Eats",
@@ -81,7 +81,7 @@
         "This project resembles an UberEats GPS (without the UI) where an optimal delivery path is generated given the starting point, endpoint, and food drop-off points. It implements data structures such as a Hash Map and Hash Function to load and store a text file of GeoCoordinates (latitude and longitude) and StreetSegments (a pair of connected latitude/longitude coordinates associated with a street name) in a given region. Using an open hash map, we can map GeoCoordinates to StreetSegments and achieve an O(1) time complexity for lookup. With this fast search speed, GooberEats utilizes the path search algorithm, A* to generate an optimal point to point route between two GeoCoordinates. Given this list of GeoCoordinates, it associates pairs of latitude and longitude coordinates to create a list of StreetSegments and then outputs this data into textual GPS navigation instructions such \"Proceed north on Broxton Avenue for 0.08 miles\". This algorithm is repeated for a sequence of point to point deliveries ordered using a simple estimation technique to avoid having to deal with the time complexity of the Traveling Salesmen Problem, O(n!) but still provide an efficient delivery order.",
         "GooberEats is written in C++ and was assigned as Project 4 in my Introduction to Computer Science II (CS32- Data Structures and Algorithms) class at UCLA."  
     ],
-    "sourceCodeLink": "",
+    "sourceCodeLink": "https://github.com/jchangz01/UCLA-CS32/tree/e514d87b52ecf29e23be5f0f08e163ed08948241/Project4",
     "projectLink": "" 
   },
   {
@@ -108,13 +108,13 @@
         "We built this app using the React Native framework as our frontend and Node and Firebase as our backend. BruinDining+ was created during a 12 hour hackathon, Hack on the Hill 7 hosted by UCLA ACM Hack. My contributions towards this app focused primarily on the UI design (JSX).",
         "NOTE: This app is only a prototype and is not at all 100% complete"
     ],
-    "sourceCodeLink": "",
+    "sourceCodeLink": "https://github.com/jchangz01/bruin-dining-plus",
     "projectLink": ""  
   },
   {
     "name": "Kontagion",
     "primaryColor": "#8c8c5c",
-    "stack": "C++",
+    "stack": "C, C++",
     "thumbnail": "assets/project_images/Kontagion/thumbnail.jpg",
     "images": [
         {
@@ -138,7 +138,9 @@
         "Kotagion is a survival game that revolves around the main character, Socrates exterminating bacteria. Brief lore of the game is as follows, Dr. Evyyl has been trying to breed trillions of dangerous bacteria to release into the world’s public restrooms. Socrates, an amateur bacteriologist has agreed to be shrunk into microscopic proportions and deposited into a petri dish to exterminate the bacteria before they can be bred. As a player, you are to control Socrates and exterminate as many bacteria as possible.",
         "The ultimate task of Kontagion is to achieve the highest round or score. For every bacteria you exterminate, you are awarded a set number of points. Upon killing all bacteria in a petri dish, you will advance to a more infected petri dish. Throughout each round, random power-ups will appear to grant you more score or refill Socrate’s ammunition. As mentioned above, Kontagion is a survival game, so good luck staying alive!",
         "This game was created for my data structures and algorithms class (CS32) to demonstrate my understanding of polymorphism and inheritance in C++. For example, all objects in this game (Socrates, Bacteria, etc.) derive from an abstract base class that defines methods that identify positioning, health (if valid), and more. In this project, I was only responsible for writing code for the logic and functionality of the game. All sprite designs and some code were provided by the instructor."
-    ]  
+    ],
+    "sourceCodeLink": "https://github.com/jchangz01/UCLA-CS32/tree/e514d87b52ecf29e23be5f0f08e163ed08948241/Project3",
+    "projectLink": ""
   },
   {
     "name": "Typing Mania",
@@ -167,7 +169,7 @@
         "Want to improve your typing speed and accuracy? If so, Typing Mania is the application for you! Typing Mania is a typing test used to determine the user’s typing speed. Users will have 60 seconds to type as many words as possible, and in the end, results are displayed.",
         "This application was created using the block code offered by code.org. When looking at Typing Mania’s raw code, we will notice that the block code acts as a layer over the native HTML, CSS, and Javascript, the actual source code of our application. Typing Mania was created individually as a final project for my AP Computer Science Principles class in high school!"
     ],
-    "sourceCodeLink": "",
+    "sourceCodeLink": "https://studio.code.org/projects/applab/W6fYBRljENKuJSX00AyUz5hozLin84DeaoAYgPt1VFE/view",
     "projectLink": "https://studio.code.org/projects/applab/W6fYBRljENKuJSX00AyUz5hozLin84DeaoAYgPt1VFE"
   }
 ]

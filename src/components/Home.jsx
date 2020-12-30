@@ -7,11 +7,11 @@ function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/#about'>About</a></ul>
-                <ul><a href='/#contact'>Contact</a></ul>
-                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href='/#projects'>Projects</a></ul>
-                <ul><a href='/#hire'>Hire Me</a></ul>
+                <ul key="About"><a href='/#about'>About</a></ul>
+                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
+                <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
+                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )

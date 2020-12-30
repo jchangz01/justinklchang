@@ -3,7 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import React from 'react'
 import '../css/Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons'
 import navLogo from '../assets/images/portfolio_logo_black.svg'
 import data from '../assets/api/project_info.json'
 
@@ -14,18 +14,17 @@ function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/#about'>About</a></ul>
-                <ul><a href='/#contact'>Contact</a></ul>
-                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href='/#projects'>Projects</a></ul>
-                <ul><a href='/#hire'>Hire Me</a></ul>
+                <ul key="About"><a href='/#about'>About</a></ul>
+                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
+                <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
+                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
 }
 
 function ProjectDescription (props) {
-    console.log (props.project)
     return (
         <React.Fragment>
             <h2 className="project-title">Introducing <span style={{color: props.project.primaryColor}}>{props.project.name}!</span></h2>
@@ -44,6 +43,26 @@ function ProjectDescription (props) {
                             </React.Fragment>
                         )
                     })
+                }
+                { props.project.sourceCodeLink ? 
+                    <a href={props.project.sourceCodeLink} target="_blank" rel="noreferrer" style={{marginRight: "16px"}}>
+                        <button className="project-link">
+                            <FontAwesomeIcon icon={faCode}/>
+                            <h3 style={{display: "inline", border: "none"}}>Source Code</h3>
+                        </button>
+                    </a>
+                    :
+                    null
+                }
+                { props.project.projectLink ? 
+                    <a href={props.project.projectLink} target="_blank" rel="noreferrer">
+                        <button className="project-link">
+                            <FontAwesomeIcon icon={faLink}/>
+                            <h3 style={{display: "inline", border: "none"}}>Link to Project</h3>
+                        </button>
+                    </a>
+                    :
+                    null
                 }
                 </div>
             </div>
@@ -70,7 +89,7 @@ function ProjectEntry (props) {
                 <React.Fragment>
                     <div className="all-projects-entry-selected">
                         <h4>{props.project.name}</h4>
-                        <p><ul>Learn more</ul></p>
+                        <p><u>Learn more</u></p>
                     </div> 
                 </React.Fragment>    
             : null }
@@ -120,9 +139,9 @@ class ProjectsGrid extends React.Component {
 
         return (
             <div id="all-projects-grid"> 
-                { gridRows.map ( row => {
+                { gridRows.map ( (row,index) => {
                     return (
-                        <div className="all-projects-row">
+                        <div className="all-projects-row" key={index}>
                             {row}
                         </div>
                     )
@@ -158,7 +177,6 @@ export default class Contact extends React.Component {
     }
 
     render() {
-        console.log(this.state.messageIndex)
         return (
             <div id="content-container" style={{height: "auto"}}>
                 <header>
@@ -208,7 +226,7 @@ export default class Contact extends React.Component {
                             : null
                     }
                     <div id="all-projects-content">
-                        <div className="fade-in-4 width-size" style={{maxWidth: "70vw"}}>
+                        <div className="fade-in-4 width-size" style={{width: "72vw"}}>
                             <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Project Gallery</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail and click to learn more!</h2>
