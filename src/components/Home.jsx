@@ -7,11 +7,11 @@ function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/about'>About</a></ul>
-                <ul><a href='/contact'>Contact</a></ul>
-                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href='/projects'>Projects</a></ul>
-                <ul><a href='/hire'>Hire Me</a></ul>
+                <ul><a href='/#about'>About</a></ul>
+                <ul><a href='/#contact'>Contact</a></ul>
+                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul><a href='/#projects'>Projects</a></ul>
+                <ul><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                                 <h1 className="home-main-title">Chang</h1>
                                 <h2 className="home-main-subtitle">2nd Year Computer Science Student at UCLA</h2>
                                 <p style={{fontSize: "64px", "marginBottom": "36px"}}> . . . </p>
-                                <h3 className="home-main-subsubtitle"><a href="/about">Learn more about Justin</a></h3>
+                                <h3 className="home-main-subsubtitle"><a href="/#about">Learn more about Justin</a></h3>
                             </div>
                         </div>
                         <div class="home-main-content">

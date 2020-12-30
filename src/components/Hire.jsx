@@ -4,16 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import navLogo from '../assets/images/portfolio_logo_black.svg'
 
-
 function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/about'>About</a></ul>
-                <ul><a href='/contact'>Contact</a></ul>
-                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href='/projects'>Projects</a></ul>
-                <ul><a href='/hire'>Hire Me</a></ul>
+                <ul><a href='/#about'>About</a></ul>
+                <ul><a href='/#contact'>Contact</a></ul>
+                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul><a href='/#projects'>Projects</a></ul>
+                <ul><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -36,7 +35,7 @@ export default class Hire extends React.Component {
                             </div>
                             <div style={{marginBottom: "80px"}}>
                                 <h3 id="hire-advertise">Please consider hiring me by checking out my resume and then reaching out to me!</h3>
-                                <h4><ul><a href="#">Link to Resume</a></ul></h4>
+                                <h4><ul><a href="/#resume">Link to Resume</a></ul></h4>
                                 <h4>justinklchang@yahoo.com</h4>
                                 <h4>(707) 534-8001</h4>
                             </div>

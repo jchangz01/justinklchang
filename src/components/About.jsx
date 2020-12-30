@@ -9,11 +9,11 @@ function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
             <nav id="navbar-contents">
-                <ul><a href='/about'>About</a></ul>
-                <ul><a href='/contact'>Contact</a></ul>
-                <ul><a href='/' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul><a href="/projects">Projects</a></ul>
-                <ul><a href='/hire'>Hire Me</a></ul>
+                <ul><a href='/#about'>About</a></ul>
+                <ul><a href='/#contact'>Contact</a></ul>
+                <ul><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
+                <ul><a href='/#projects'>Projects</a></ul>
+                <ul><a href='/#hire'>Hire Me</a></ul>
             </nav>
         </div>
     )
@@ -49,7 +49,7 @@ export default class Contact extends React.Component {
                                     go on runs and hikes! I am currently looking for a 2021 summer internship! 
                                 </p>
                                 <p className="about-main-paragraph">
-                                    Check out my projects <a href="/projects">here</a> and/or connect with me <a href="/contact">here</a>.
+                                    Check out my projects <a href="/#projects">here</a> and/or connect with me <a href="/#contact">here</a>.
                                 </p>
                                 <div className="about-main-socials">
                                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/"><FontAwesomeIcon icon={faInstagram}/></a>
