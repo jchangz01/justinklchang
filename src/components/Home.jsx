@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                                 <h3 className="home-main-subsubtitle"><a href="/#about">Learn more about Justin</a></h3>
                             </div>
                         </div>
-                        <div class="home-main-content">
+                        <div className="home-main-content">
                             <img src={homeProfile} alt="Did not load, please refresh" className="home-main-pic float"/>
                             <div className="home-main-circ float">
                                 <div className="home-main-subcirc"></div>

@@ -31,7 +31,7 @@ export default class Contact extends React.Component {
                         <div className="about-main-content" style={{textAlign: "right"}}>
                             <img className="about-main-pic" src={aboutProfile} alt="Did not load, please refresh"/>
                         </div>
-                        <div class="about-main-content">
+                        <div className="about-main-content">
                             <div style={{marginLeft: "40px"}}>
                                 <h1 className="about-main-title">About Me</h1>
                                 <hr className="about-main-linebreak"></hr>

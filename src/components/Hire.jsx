@@ -34,8 +34,8 @@ export default class Hire extends React.Component {
                                 <h3>Bay Area &#183; San Francisco &#183; Silicon Valley</h3>
                             </div>
                             <div style={{marginBottom: "80px"}}>
-                                <h3 id="hire-advertise">Please consider hiring me by checking out my resume and then reaching out to me!</h3>
-                                <h4><ul><a href="/#resume">Link to Resume</a></ul></h4>
+                                <h3 id="hire-advertise">Please consider hiring me by checking out my resume and reaching out to me!</h3>
+                                <h4><ul><a target="_blank" href="/#resume">Link to Resume</a></ul></h4>
                                 <h4>justinklchang@yahoo.com</h4>
                                 <h4>(707) 534-8001</h4>
                             </div>
