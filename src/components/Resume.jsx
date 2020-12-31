@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/images/resume.png'
+import resume from '../assets/images/JustinKyle_Chang_SWEIntern_Resume.png'
 
 export default function Resume () {
     return (
