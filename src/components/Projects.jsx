@@ -182,7 +182,7 @@ export default class Contact extends React.Component {
                 <header>
                     <NavBar/>
                 </header>
-                <section style={{"width": "97.88vw"}}>   
+                <section >   
                     <div className="width-size fade-in-4" id="project-main"> 
                         <div className="project-main-content">
                             <h1 id="project-main-title">Projects</h1>
@@ -226,7 +226,7 @@ export default class Contact extends React.Component {
                             : null
                     }
                     <div id="all-projects-content">
-                        <div className="fade-in-4 width-size" style={{width: "72vw"}}>
+                        <div className="fade-in-4 width-size" style={{width: "72vw", minWidth: "1180px"}}>
                             <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Project Gallery</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail and click to learn more!</h2>

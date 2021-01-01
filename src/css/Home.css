@@ -5,10 +5,18 @@
     align-items: center;    
 }
 
+@media (max-height: 648px) {
+    #home-main{ height: 720px;}
+}
+
 .home-main-content {
     flex-basis: 50%;
     position: relative;
     z-index: 0;
+}
+
+@media (max-height: 648px) {
+    .home-main-content:first-of-type { padding-left: 20px; }
 }
 
     /* Left Side Content */

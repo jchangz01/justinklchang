@@ -5,6 +5,10 @@
     align-items: center;    
 }
 
+@media (max-height: 648px) {
+    #contact-main{ height: 680px;}
+}
+
 .contact-main-content {
     flex-basis: 100%;
     position: relative;
@@ -53,6 +57,9 @@
         align-items: center;
         margin-top: 64px;
         margin-bottom: 8vh;
+    }
+    @media (max-height: 648px) {
+        #contact-main-icon-container{ justify-content: space-around;}
     }
         
         .icon-circle {

@@ -5,6 +5,10 @@
     align-items: center;    
 }
 
+@media (max-height: 720px) {
+    #about-main{ height: 700px;}
+}
+
 .about-main-content {
     flex-basis: 50%;
     position: relative;

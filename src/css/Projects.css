@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;    
 }
+@media (max-height: 640px) {
+    #project-main{ height: 640px;}
+}
 
 .project-main-content {
     flex-basis: 100%;
@@ -39,6 +42,8 @@
 .project-section {
     height: 100vh;
     background-color: white;
+    min-width: 1200px;
+    min-height: 760px;
 }
     .project-section-title {
         margin: 0 26px;
@@ -56,6 +61,7 @@
 /////////////////////////////////////*/
 #latest-project-content {
     height: calc(97vh - 56px);
+    min-height: 664px;
     display: flex;
     justify-content: center;
     align-items: center;    

@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;    
 }
+@media (max-height: 648px) {
+    #hire-main{ height: 720px;}
+}
 
 .hire-main-content {
     flex-basis: 100%;
@@ -16,6 +19,9 @@
         font-family: 'Roboto';
     }
 
+    @media (max-height: 648px) {
+        .hire-main-content{ padding-left: 20px;}
+    }
 #hire-name {
     font-family: 'Bebas Neue';
     font-size: 56px;
