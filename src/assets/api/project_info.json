@@ -2,7 +2,7 @@
   {
       "name": "BruinPlanner",
       "primaryColor": "#2774AE",
-      "stack": "MongoDB, ExpressJS, NodeJS, ReactJS",
+      "stack": "MongoDB, ExpressJS, ReactJS, NodeJS",
       "thumbnail": "assets/project_images/BruinPlanner/thumbnail.jpg",
     "images": [
       {
@@ -33,7 +33,7 @@
   {
     "name": "ScribblMath",
     "primaryColor": "#61dbfb",
-    "stack": "MySQL, ExpressJS, NodeJS, ReactJS",
+    "stack": "MySQL, ExpressJS, ReactJS, NodeJS",
     "thumbnail": "assets/project_images/ScribblMath/thumbnail.jpg",
     "images": [
       {
@@ -87,7 +87,7 @@
   {
     "name": "BruinDining+",
     "primaryColor": "#03A9F4",
-    "stack": "Firebase, NodeJS, React Native",
+    "stack": "Firebase, React Native, NodeJS",
     "thumbnail": "assets/project_images/BruinDining+/thumbnail.jpg",
     "images": [
         {

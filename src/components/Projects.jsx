@@ -199,7 +199,7 @@ export default class Contact extends React.Component {
                                 not perfect and improvements can be made. Supporting my previous statement, 
                                 I consider my projects as statements of experience in a particular 
                                 programming language(s). Overall, I had lots of fun, gained tons of knowledge, 
-                                nd exceeded many of the learning outcomes I had in mind while creating these 
+                                and exceeded many of the learning outcomes I had in mind while creating these 
                                 projects! Click the arrow below to check out my latest piece of work and 
                                 navigate below that to view a gallery of all my works.
                             </p>
