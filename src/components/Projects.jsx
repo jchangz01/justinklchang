@@ -13,7 +13,7 @@ const projectInfo = data.slice(1, data.length) //store remaining projects
 function NavBar (props) {
     return (
         <div id="navbar-container" className="width-size center">
-            <nav id="navbar-contents">
+            <nav id="navbar-contents" >
                 <ul key="About"><a href='/#about'>About</a></ul>
                 <ul key="Contact"><a href='/#contact'>Contact</a></ul>
                 <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
@@ -179,7 +179,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div id="content-container" style={{height: "auto"}}>
-                <header>
+                <header style={{zIndex: "1"}}> 
                     <NavBar/>
                 </header>
                 <section >   
@@ -225,15 +225,15 @@ export default class Contact extends React.Component {
                             <PopUpPrompt onClick={this.triggerPopupOff} project={projectInfo[this.state.messageIndex]} />
                             : null
                     }
-                    <div id="all-projects-content">
-                        <div className="fade-in-4 width-size" style={{width: "72vw", minWidth: "1180px"}}>
+                    <div id="all-projects-content" className="fade-in-4">
+
                             <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Project Gallery</h1>
                                 <h2 id="all-projects-subtitle">Hover over each thumbnail and click to learn more!</h2>
                                 <hr style={{width: "640px", margin: "3vh auto"}}></hr>
                                 <ProjectsGrid data={projectInfo} popupOn={this.triggerPopupOn} popupOff={this.triggerPopupOff}/>
                             </div>
-                        </div>
+                        
                     </div>
                 </section>
             </div>
