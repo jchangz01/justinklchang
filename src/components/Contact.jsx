@@ -88,7 +88,7 @@ export default class Contact extends React.Component {
                     <NavBar />
                 </header>
                 <section>   
-                    <div className="width-size fade-in-4" id="contact-main"> 
+                    <div className="width-size fade-in-3" id="contact-main"> 
                         <div className="contact-main-content">
                             <h1 id="contact-main-title">Contact Me</h1>
                             <h2 id="contact-main-subtitle">Get in touch with me now!</h2>

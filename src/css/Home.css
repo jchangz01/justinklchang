@@ -14,7 +14,7 @@
     position: relative;
     z-index: 0;
 }
-
+.home-main-content:first-of-type { padding-left: 20px; }
 @media (max-height: 648px) {
     .home-main-content:first-of-type { padding-left: 20px; }
 }

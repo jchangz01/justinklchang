@@ -27,7 +27,7 @@ export default class Contact extends React.Component {
                     <NavBar/>
                 </header>
                 <section>
-                    <div className="width-size fade-in-4" id="about-main">
+                    <div className="width-size fade-in-3" id="about-main">
                         <div className="about-main-content" style={{textAlign: "right"}}>
                             <img className="about-main-pic" src={aboutProfile} alt="Did not load, please refresh"/>
                         </div>

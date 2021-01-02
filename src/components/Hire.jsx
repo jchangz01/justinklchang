@@ -26,7 +26,7 @@ export default class Hire extends React.Component {
                     <NavBar/>
                 </header>
                 <section>
-                    <div className="width-size fade-in-4" id="hire-main">
+                    <div className="width-size fade-in-3" id="hire-main">
                         <div className="hire-main-content">
                             <div style={{marginBottom: "80px"}}> 
                                 <h2 id="hire-name">Justin Kyle Chang</h2>

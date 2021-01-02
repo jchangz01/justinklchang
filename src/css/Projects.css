@@ -221,10 +221,15 @@
         line-height: 18px;
     }
 
+.project-date {
+    color: black;
+    font-weight: bold;
+}
 .project-link {
     border-radius: 0.25rem;
     background-color: lightgray;
     padding: 8px;
+    margin-right: 16px;
     transition: 0.3s;
     border: none;
     cursor: pointer;

@@ -34,36 +34,37 @@ function ProjectDescription (props) {
                     <ImageGallery items={props.project.images}/>
                 </div>
                 <div className="project-right-section">
-                {
-                    props.project.description.map ( paragraph => {
-                        return (
-                            <React.Fragment>
-                                <p>{paragraph}</p>  
-                                <br></br>
-                            </React.Fragment>
-                        )
-                    })
-                }
-                { props.project.sourceCodeLink ? 
-                    <a href={props.project.sourceCodeLink} target="_blank" rel="noreferrer" style={{marginRight: "16px"}}>
-                        <button className="project-link">
-                            <FontAwesomeIcon icon={faCode}/>
-                            <h3 style={{display: "inline", border: "none"}}>Source Code</h3>
-                        </button>
-                    </a>
-                    :
-                    null
-                }
-                { props.project.projectLink ? 
-                    <a href={props.project.projectLink} target="_blank" rel="noreferrer">
-                        <button className="project-link">
-                            <FontAwesomeIcon icon={faLink}/>
-                            <h3 style={{display: "inline", border: "none"}}>Link to Project</h3>
-                        </button>
-                    </a>
-                    :
-                    null
-                }
+                    {
+                        props.project.description.map ( paragraph => {
+                            return (
+                                <React.Fragment>
+                                    <p>{paragraph}</p>  
+                                    <br></br>
+                                </React.Fragment>
+                            )
+                        })
+                    }
+                    { props.project.sourceCodeLink ? 
+                        <a href={props.project.sourceCodeLink} target="_blank" rel="noreferrer">
+                            <button className="project-link">
+                                <FontAwesomeIcon icon={faCode}/>
+                                <h3 style={{display: "inline", border: "none"}}>Source Code</h3>
+                            </button>
+                        </a>
+                        :
+                        null
+                    }
+                    { props.project.projectLink ? 
+                        <a href={props.project.projectLink} target="_blank" rel="noreferrer">
+                            <button className="project-link">
+                                <FontAwesomeIcon icon={faLink}/>
+                                <h3 style={{display: "inline", border: "none"}}>Link to Project</h3>
+                            </button>
+                        </a>
+                        :
+                        null
+                    }
+                    <span className="project-date">{props.project.date}</span>
                 </div>
             </div>
         </React.Fragment>
@@ -183,7 +184,7 @@ export default class Contact extends React.Component {
                     <NavBar/>
                 </header>
                 <section >   
-                    <div className="width-size fade-in-4" id="project-main"> 
+                    <div className="width-size fade-in-3" id="project-main"> 
                         <div className="project-main-content">
                             <h1 id="project-main-title">Projects</h1>
                             <h2 id="project-main-subtitle">Check out some of my personal works!</h2>
@@ -209,7 +210,7 @@ export default class Contact extends React.Component {
                 </section>
                 <section>
                     <div className="project-section">
-                        <div className="fade-in-4 width-size" id="latest">
+                        <div className="fade-in-3 width-size" id="latest">
                             <div style={{paddingTop: "3vh"}}>
                                 <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
                                 <h1 className="project-section-title">Latest Project</h1>
@@ -225,7 +226,7 @@ export default class Contact extends React.Component {
                             <PopUpPrompt onClick={this.triggerPopupOff} project={projectInfo[this.state.messageIndex]} />
                             : null
                     }
-                    <div id="all-projects-content" className="fade-in-4">
+                    <div id="all-projects-content" className="fade-in-3">
 
                             <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title">Project Gallery</h1>

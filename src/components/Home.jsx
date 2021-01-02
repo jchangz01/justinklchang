@@ -25,7 +25,7 @@ export default class Home extends React.Component {
                     <NavBar/>
                 </header>
                 <section>
-                    <div className="width-size fade-in-4" id="home-main">
+                    <div className="width-size fade-in-3" id="home-main">
                         <div className="home-main-content ">
                             <div style={{marginBottom: "80px"}}>
                                 <h1 className="home-main-title">Justin Kyle</h1>

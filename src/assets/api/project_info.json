@@ -1,6 +1,7 @@
 [
   {
       "name": "BruinPlanner",
+      "date": "(Oct 2020 - Present)",
       "primaryColor": "#2774AE",
       "stack": "MongoDB, ExpressJS, ReactJS, NodeJS",
       "thumbnail": "assets/project_images/BruinPlanner/thumbnail.jpg",
@@ -32,6 +33,7 @@
   },
   {
     "name": "ScribblMath",
+    "date": "(Sep 2020 - Present)",
     "primaryColor": "#61dbfb",
     "stack": "MySQL, ExpressJS, ReactJS, NodeJS",
     "thumbnail": "assets/project_images/ScribblMath/thumbnail.jpg",
@@ -59,6 +61,7 @@
   },
   {
     "name": "Goober Eats",
+    "date": "(Mar 2020 - Apr 2020)",
     "primaryColor": "black",
     "stack": "C++",
     "thumbnail": "assets/project_images/GooberEats/thumbnail.jpg",
@@ -86,6 +89,7 @@
   },
   {
     "name": "BruinDining+",
+    "date": "(Feb 2020)",
     "primaryColor": "#03A9F4",
     "stack": "Firebase, React Native, NodeJS",
     "thumbnail": "assets/project_images/BruinDining+/thumbnail.jpg",
@@ -113,6 +117,7 @@
   },
   {
     "name": "Kontagion",
+    "date": "(Feb 2020 - Mar 2020)",
     "primaryColor": "#8c8c5c",
     "stack": "C, C++",
     "thumbnail": "assets/project_images/Kontagion/thumbnail.jpg",
@@ -144,6 +149,7 @@
   },
   {
     "name": "Typing Mania",
+    "date": "(Apr 2018 - May 2018)",
     "primaryColor": "#B22222",
     "stack": "Block Code (HTML, CSS, Javascript)",
     "thumbnail": "assets/project_images/TypingMania/thumbnail.jpg",

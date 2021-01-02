@@ -69,15 +69,18 @@
             vertical-align: middle;
             border-radius: 50%;
             background-color:#080808;
+            background-image: #080808;
             animation: float 6s ease-in-out infinite;
             display: inline-block;
-            transition: 0.3s;
+            transition:  0.3s;
             cursor: pointer;
         }
         
         .instagram:hover { 
             background-color: none;
-            background-image: linear-gradient(49deg, #f9ed32, #ee2a7b, #002aff); }
+            background-image: linear-gradient(49deg, #f9ed32, #ee2a7b, #002aff); 
+        }
+
         .linkedin:hover { background-color: #007bb5; }
         .facebook:hover { background-color: #4267B2; }
         .github:hover { background-color: #24292e; }
