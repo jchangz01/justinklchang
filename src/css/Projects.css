@@ -117,6 +117,9 @@
     transition: 0.3s;
 }
 
+    @media (max-height: 250px) {
+        .all-projects-entry{ height: 72vh;}
+    }
     .all-projects-entry:hover img{
         opacity: 0.56;
     }
@@ -126,6 +129,9 @@
         top: 8.4vh;
         z-index: 1;
         width: 19vw;
+    }
+    @media (max-height: 250px) {
+        .all-projects-entry-selected{ top: 22vh;}
     }
         .all-projects-entry-selected * {
             color: black;
