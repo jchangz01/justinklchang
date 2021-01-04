@@ -13,15 +13,13 @@
     text-align: left;
     position: relative;
     line-height: 32px;
+    padding-left: 20px;
 }
     .hire-main-content * {
         color: gray;
         font-family: 'Roboto';
     }
 
-    @media (max-height: 648px) {
-        .hire-main-content{ padding-left: 20px;}
-    }
 #hire-name {
     font-family: 'Bebas Neue';
     font-size: 56px;
@@ -51,3 +49,12 @@
 .hire-social * { color: white }
 
 .hire-social:hover  { opacity: 0.3; }
+
+#hire-vector-pic {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 16vw;
+    width: 32%;
+    height: auto;
+}

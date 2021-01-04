@@ -3,6 +3,7 @@ import '../css/Hire.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import navLogo from '../assets/images/portfolio_logo_black.svg'
+import hireProfile from '../assets/images/hire-profile.png'
 
 function NavBar (props) {
     return (
@@ -45,6 +46,7 @@ export default class Hire extends React.Component {
                                 <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/" className="hire-social"><FontAwesomeIcon icon={faFacebook}/></a>
                                 <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01" className="hire-social"><FontAwesomeIcon icon={faGithub}/></a>
                             </div>
+                            <img src={hireProfile} id="hire-vector-pic" alt="Justin Kyle Chang Vector Drawing"/>
                         </div>
                     </div>
                 </section>

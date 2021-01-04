@@ -43,6 +43,9 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </section>
+                <footer>
+                    <div id="copyright">&#169; <b>justinklchang.com</b></div>
+                </footer>
             </div>
         )
     }

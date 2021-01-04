@@ -53,13 +53,10 @@
     #contact-main-icon-container {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-top: 64px;
         margin-bottom: 8vh;
-    }
-    @media (max-height: 648px) {
-        #contact-main-icon-container{ justify-content: space-around;}
     }
         
         .icon-circle {

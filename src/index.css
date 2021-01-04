@@ -73,6 +73,14 @@ General styling for all pages
   text-align: center;
 }
 
+#copyright {
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding-bottom: 24px;
+  text-align: center;
+  color: lightgray
+}
+
 /*//////////////////////////
 General styling for icons
 //////////////////////////*/
@@ -215,7 +223,7 @@ Navigation bar styling
 }
 
 #navbar-container {
-  padding: 54px 40px 0 72px;
+  padding: 54px 41.5px 0 72px;
   z-index: -5;
 }
 
