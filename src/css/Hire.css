@@ -55,6 +55,11 @@
     right: 0;
     bottom: 0;
     margin-right: 16vw;
-    width: 32%;
-    height: auto;
+    width: auto;
+    height: 76vh;
+}
+
+@media (max-width: 1240px) {
+    #hire-main { height: calc(720px + 76vh);}
+    #hire-vector-pic{ position: static;}
 }
