@@ -87,6 +87,10 @@ General styling for all pages
   color: lightgray
 }
 
+@media (max-width: 648px) {
+  .width-size { width: 100% }
+  #copyright { width: 100%; margin-top: 24px;}
+}
 
 /*//////////////////////////
 General styling for icons
@@ -292,7 +296,7 @@ Navigation bar styling
   z-index: 7;
   padding: 100px 0 0 24px;
   text-align: left;
-  transition: all 1.4s ease;
+  transition: all 1.2s ease;
   flex-direction: column;
 }
 
@@ -309,7 +313,6 @@ Navigation bar styling
   background: gray;
   border-color: rgba(255,255,255,0.25)
 }
-
 
 @media (max-width: 648px) {
   #navbar-container {

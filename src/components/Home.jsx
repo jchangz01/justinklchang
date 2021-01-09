@@ -19,7 +19,10 @@ function NavBar (props) {
                 <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
             </nav>
             { menu ?
-                <FontAwesomeIcon icon={faTimes} id="navbar-menu-button" onClick={onClick}/>:
+                <React.Fragment>
+                    <FontAwesomeIcon icon={faTimes} id="navbar-menu-button" onClick={onClick}/>
+                    <div className="white-overlay"></div> 
+                </React.Fragment> :
                 <FontAwesomeIcon icon={faBars} id="navbar-menu-button" onClick={onClick}/>
             }
             <nav id="navbar-menu-content" className={menu ? "active" : null}>
@@ -32,7 +35,6 @@ function NavBar (props) {
                 <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
                 <hr></hr>
             </nav>
-            { menu ? <div className="white-overlay"></div> : null }
         </div>
     )
 }
@@ -46,7 +48,7 @@ export default class Home extends React.Component {
                 </header>
                 <section>
                     <div className="width-size fade-in-3" id="home-main">
-                        <div className="home-main-content ">
+                        <div className="home-main-content">
                             <div style={{marginBottom: "80px"}}>
                                 <h1 className="home-main-title">Justin Kyle</h1>
                                 <h1 className="home-main-title">Chang</h1>
