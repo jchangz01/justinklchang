@@ -80,8 +80,6 @@
 @media (max-width: 648px) {
     #home-main {
         height: auto;
-        align-items: none;
-        justify-content: none;
         flex-direction: column-reverse;
     }
     .home-main-content {

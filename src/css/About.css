@@ -66,3 +66,29 @@
         color: black;
         background-color: black
     }
+
+/*Mobile Responsive Design */
+@media (max-width: 648px) {
+    #about-main {
+        height: auto;;
+        flex-direction: column-reverse;
+    }
+    
+    .about-main-content {
+        padding: 20px 16px 0 
+    }
+    .about-main-content > div { margin-left: 0 !important; }
+    .about-main-paragraph {
+        width: 100%;
+    }
+    .about-main-socials {
+        font-size: 36px;
+    }
+    .about-main-socials > * {margin-right: 16px;}
+    .about-main-socials > *:last-of-type { margin-right: 0;}
+    .about-main-pic{
+        margin-bottom: 4vh;
+        margin-right: 0;
+        width: 100%;
+    }
+}
