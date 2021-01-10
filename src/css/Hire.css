@@ -63,3 +63,25 @@
     #hire-main { height: calc(720px + 76vh);}
     #hire-vector-pic{ position: static;}
 }
+
+/*Mobile Responsive Design */
+@media (max-width: 648px) {
+    #hire-main {
+        height: auto;
+        display: block;
+        padding: 24px 10px 0;
+    }
+
+    .hire-main-content {
+        padding-left: 14px;
+    }
+    #hire-advertise {
+        width: 100%;
+    }
+
+    #hire-vector-pic {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}

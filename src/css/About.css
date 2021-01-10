@@ -70,12 +70,12 @@
 /*Mobile Responsive Design */
 @media (max-width: 648px) {
     #about-main {
-        height: auto;;
+        height: auto;
         flex-direction: column-reverse;
     }
     
     .about-main-content {
-        padding: 20px 16px 0 
+        padding: 20px 16px 0 24px;
     }
     .about-main-content > div { margin-left: 0 !important; }
     .about-main-paragraph {
@@ -84,7 +84,7 @@
     .about-main-socials {
         font-size: 36px;
     }
-    .about-main-socials > * {margin-right: 16px;}
+    .about-main-socials > * {margin-right: 16px; line-height: 20px;}
     .about-main-socials > *:last-of-type { margin-right: 0;}
     .about-main-pic{
         margin-bottom: 4vh;

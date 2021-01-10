@@ -95,3 +95,45 @@
             font-size: 18px;
             color: gray
         }
+
+/*Mobile Responsive Design */
+@media (max-width: 648px) {
+    #contact-main {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    
+    .contact-main-content {
+        padding: 20px 12px 0 
+    }
+    #contact-main-title {
+        font-size: 72px;
+        letter-spacing: 2px;
+    }
+    #contact-main-subtitle {
+        font-size: 12px;
+    }
+    .email-content {
+        font-size: 14px;
+    }
+    .email-content > span > * { margin-left: 8px !important; }
+
+    #contact-main-icon-container {
+        margin-top: 8vh;
+        margin-bottom: 4vh;
+        flex-direction: column;
+    }
+
+    .icon-name {
+        margin: 32px 0 48px;
+    }
+}
+
+@media (max-width: 320px) {
+    #contact-main-title {
+        font-size: 70px;
+    }
+    .email-content {
+        font-size: 11px;
+    }
+}
