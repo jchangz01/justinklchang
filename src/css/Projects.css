@@ -50,7 +50,15 @@
         font-size: 56px;
         display: inline-block; 
         color: black;
+    }
 
+    .project-section-line {
+        height: 4px;
+        background-color: black; 
+        border: none;
+        display: inline-block;
+        margin-bottom: 16px;
+        width: 10%
     }
     .project-section-title:before, :after{
         border-bottom: 2px solid #000; 
@@ -96,9 +104,6 @@
     width: 57vw;
     margin: 0 auto;
     padding-bottom: 16vh;
-}
-@media (max-width: 500px) {
-    #all-projects-grid{ width: 228vw;}
 }
 
 .all-projects-row {
@@ -230,6 +235,7 @@
 .project-date {
     color: black;
     font-weight: bold;
+    display: inline-block;
 }
 .project-link {
     border-radius: 0.25rem;
@@ -251,3 +257,64 @@
         font-size: 16px;
         letter-spacing: 1px;
     }
+
+/*Mobile Responsive Design */
+@media (max-width: 648px) {
+    #project-main {
+        display: block;
+        height: auto;
+    }
+    .project-main-content { padding: 36px 10px; }
+    #project-main-des { width: auto; }
+
+    .project-section {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        padding-bottom: 32px;
+    }
+    .project-section-title {
+        text-align: center;
+        display: block;
+        margin-bottom: 48px;
+    }
+    .project-section-line { display: none; }
+
+    #latest-project-content {
+        height: auto;
+        min-height: 0;
+        display: block;
+        padding: 0 16px;
+    }
+    .project-left-section {
+        width: 100%;
+        display: block;
+    }
+    .project-right-section {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 3vh;
+    }
+
+    .project-title {
+        font-size: 40px;
+        margin-top: 3vh
+    }
+    .project-date {
+        line-height: 40px;
+    }
+
+    #all-projects-content {
+        min-width: 0;
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 8vh
+    }
+        #all-projects-content hr { width: 100% !important; }
+
+    #all-projects-grid { width: 80%; margin-top: 4vh; padding-bottom: 8vh; }
+    .all-projects-row { flex-direction: column; }
+    .all-projects-entry { height: 44vw; }
+    .box { height: 76vh; }
+}

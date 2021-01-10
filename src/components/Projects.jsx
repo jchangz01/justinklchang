@@ -1,9 +1,9 @@
 import { Link as ScrollLink } from 'react-scroll';
 import ImageGallery from 'react-image-gallery';
-import React from 'react'
-import '../css/Projects.css'
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faCode, faLink, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import '../css/Projects.css'
 import navLogo from '../assets/images/portfolio_logo_black.svg'
 import data from '../assets/api/project_info.json'
 
@@ -11,14 +11,34 @@ const LatestProjectInfo = data[0]; //store latest project
 const projectInfo = data.slice(1, data.length) //store remaining projects
 
 function NavBar (props) {
+    const [menu, toggleMenu] = useState(false);
+    const onClick = () => toggleMenu(!menu);
+
     return (
-        <div id="navbar-container" className="width-size center">
-            <nav id="navbar-contents" >
+        <div id="navbar-container" className="center width-size">
+            <nav id="navbar-contents">
                 <ul key="About"><a href='/#about'>About</a></ul>
                 <ul key="Contact"><a href='/#contact'>Contact</a></ul>
                 <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
                 <ul key="Projects"><a href='/#projects'>Projects</a></ul>
                 <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
+            </nav>
+            { menu ?
+                <React.Fragment>
+                    <FontAwesomeIcon icon={faTimes} id="navbar-menu-button" onClick={onClick}/>
+                    <div className="white-overlay"></div> 
+                </React.Fragment> :
+                <FontAwesomeIcon icon={faBars} id="navbar-menu-button" onClick={onClick}/>
+            }
+            <nav id="navbar-menu-content" className={menu ? "active" : null}>
+                <ul key="About"><a href='/#about'>About</a></ul>
+                <hr></hr>
+                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
+                <hr></hr>
+                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
+                <hr></hr>
+                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
+                <hr></hr>
             </nav>
         </div>
     )
@@ -212,9 +232,9 @@ export default class Contact extends React.Component {
                     <div className="project-section">
                         <div className="fade-in-3 width-size" id="latest">
                             <div style={{paddingTop: "3vh"}}>
-                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "10%"}}></hr>
+                                <hr class="project-section-line"></hr>
                                 <h1 className="project-section-title">Latest Project</h1>
-                                <hr style={{height: "4px", backgroundColor: "black", border: "none", display: "inline-block", marginBottom: "16px", width: "60%"}}></hr>
+                                <hr class="project-section-line" style={{width: "60%"}}></hr>
                             </div>
                             <LatestProject />
                         </div>
