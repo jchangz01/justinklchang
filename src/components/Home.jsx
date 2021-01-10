@@ -9,7 +9,12 @@ function NavBar (props) {
     const [menu, toggleMenu] = useState(false);
     const onClick = () => toggleMenu(!menu);
 
-    return (
+    if (menu === true)
+        document.querySelector('body').classList.add('no-scroll')
+    else 
+        document.querySelector('body').classList.remove('no-scroll')
+    
+        return (
         <div id="navbar-container" className="center width-size">
             <nav id="navbar-contents">
                 <ul key="About"><a href='/#about'>About</a></ul>
