@@ -45,6 +45,9 @@
     min-width: 1200px;
     min-height: 760px;
 }
+@media (max-height: 760px) {
+    .project-section{ height: 760px;}
+}
     .project-section-title {
         margin: 0 26px;
         font-size: 56px;
@@ -271,6 +274,7 @@
         width: 100%;
         height: auto;
         min-width: 0;
+        min-height: 0;
         padding-bottom: 32px;
     }
     .project-section-title {

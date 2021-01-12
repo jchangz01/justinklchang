@@ -29,7 +29,7 @@
         "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). The website also utilizes many open-source npm packages such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving minor assistance from my UCLA CS Peers."
       ],
       "sourceCodeLink": "https://github.com/jchangz01/bruinplanner/",
-      "projectLink": ""
+      "projectLink": "http://www.bruinplanner.justinklchang.com/"
   },
   {
     "name": "ScribblMath",
