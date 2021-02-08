@@ -1,2 +1,2 @@
-# Justin Kyle Chang's Personal Website
+# Personal Website
 This is the source to my [website](http://justinklchang.com/).
