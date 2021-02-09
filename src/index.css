@@ -77,19 +77,29 @@ General styling for all pages
   text-align: center;
 }
 
+#footer-info {
+  letter-spacing: 2px;
+  width: 1180px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: lightgray
+}
 #copyright {
   letter-spacing: 2px;
   width: 1180px;
   margin: 0 auto;
   font-size: 12px;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   text-align: center;
   color: lightgray
 }
 
 @media (max-width: 648px) {
   .width-size { width: 100% }
-  #copyright { width: 100%; margin-top: 24px;}
+  #copyright { width: 100%; }
+  #footer-info { width: 100%; margin-top: 24px;}
 }
 
 /*//////////////////////////
