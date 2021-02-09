@@ -82,6 +82,7 @@
         .tiktok:hover { background: white; }
         .tiktok:hover * { color: #ee1d52}
         .strava:hover { background: #FC4C02; }
+        .spotify:hover { background: #1DB954; }
 
         .icon {
             vertical-align: middle;

@@ -71,6 +71,7 @@ export default class Home extends React.Component {
                     </div>
                 </section>
                 <footer>
+                    <div id="footer-info">Designed and <u><a target="_blank" rel="noreferrer" href="https://github.com/jchangz01/justinklchang" style={{color: 'lightgray'}}>Coded</a></u> by Justin Kyle Chang</div>
                     <div id="copyright">&#169; <b>justinklchang.com</b></div>
                 </footer>
             </div>
