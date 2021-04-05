@@ -287,7 +287,7 @@ Navigation bar styling
 #navbar-menu-button {
   z-index: 10;
   display: none;
-  position: absolute;
+  position: fixed;
   left: 24px;
   top: 24px;
   height: 24px;

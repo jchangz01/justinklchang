@@ -1,12 +1,12 @@
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import Home from './pages/Home';
+import About from './pages/About'
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Hire from './pages/Hire'
+import Resume from './pages/Resume'
 import './index.css';
-import Home from './components/Home';
-import About from './components/About'
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Hire from './components/Hire'
-import Resume from './components/Resume'
 
 //Set up routes
 ReactDOM.render(

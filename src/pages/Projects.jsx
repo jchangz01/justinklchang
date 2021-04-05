@@ -1,53 +1,14 @@
+import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import ImageGallery from 'react-image-gallery';
-import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown, faCode, faLink, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import '../css/Projects.css'
-import navLogo from '../assets/images/portfolio_logo_black.svg'
+import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons'
+import NavBar from '../components/NavBar'
 import data from '../assets/api/project_info.json'
+import '../css/Projects.css'
 
 const LatestProjectInfo = data[0]; //store latest project  
 const projectInfo = data.slice(1, data.length) //store remaining projects
-
-function NavBar (props) {
-    const [menu, toggleMenu] = useState(false);
-    const onClick = () => toggleMenu(!menu);
-
-    if (menu === true)
-        document.querySelector('body').classList.add('no-scroll')
-    else 
-        document.querySelector('body').classList.remove('no-scroll')
-        
-    return (
-        <div id="navbar-container" className="center width-size">
-            <nav id="navbar-contents">
-                <ul key="About"><a href='/#about'>About</a></ul>
-                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
-                <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
-                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
-            </nav>
-            { menu ?
-                <React.Fragment>
-                    <FontAwesomeIcon icon={faTimes} id="navbar-menu-button" onClick={onClick}/>
-                    <div className="white-overlay"></div> 
-                </React.Fragment> :
-                <FontAwesomeIcon icon={faBars} id="navbar-menu-button" onClick={onClick}/>
-            }
-            <nav id="navbar-menu-content" className={menu ? "active" : null}>
-                <ul key="About"><a href='/#about'>About</a></ul>
-                <hr></hr>
-                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
-                <hr></hr>
-                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
-                <hr></hr>
-                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
-                <hr></hr>
-            </nav>
-        </div>
-    )
-}
 
 function ProjectDescription (props) {
     return (
@@ -56,13 +17,13 @@ function ProjectDescription (props) {
             <h3 className="project-stack">Tech Stack: {props.project.stack}</h3>
             <div className={props.latest ? "width-size" : null}>
                 <div className="project-left-section">
-                    <ImageGallery items={props.project.images}/>
+                    <ImageGallery items={props.project.images} style={{zIndex: 0}}/>
                 </div>
                 <div className="project-right-section">
                     {
-                        props.project.description.map ( paragraph => {
+                        props.project.description.map ( (paragraph, index) => {
                             return (
-                                <React.Fragment>
+                                <React.Fragment key={index}>
                                     <p>{paragraph}</p>  
                                     <br></br>
                                 </React.Fragment>
@@ -165,7 +126,7 @@ class ProjectsGrid extends React.Component {
 
         return (
             <div id="all-projects-grid"> 
-                { gridRows.map ( (row,index) => {
+                { gridRows.map ((row,index) => {
                     return (
                         <div className="all-projects-row" key={index}>
                             {row}
@@ -188,14 +149,15 @@ function PopUpPrompt (props) {
     )
 }
 
-export default class Contact extends React.Component {
+export default class Projects extends React.Component {
     state = {
         messageIndex: null
     }
 
     triggerPopupOn = (index) => {
         this.setState({messageIndex: index})
-        document.querySelector('body').classList.add('no-scroll') //prevents scrolling when pop-up is in view
+        document.querySelector('body').classList.add('no-scroll')
+        console.log('no scroll')
     }
     triggerPopupOff = () => {
         this.setState({messageIndex: null})
@@ -237,9 +199,9 @@ export default class Contact extends React.Component {
                     <div className="project-section">
                         <div className="fade-in-3 width-size" id="latest">
                             <div style={{paddingTop: "3vh"}}>
-                                <hr class="project-section-line"></hr>
+                                <hr className="project-section-line"></hr>
                                 <h1 className="project-section-title">Latest Project</h1>
-                                <hr class="project-section-line" style={{width: "60%"}}></hr>
+                                <hr className="project-section-line" style={{width: "60%"}}></hr>
                             </div>
                             <LatestProject />
                         </div>

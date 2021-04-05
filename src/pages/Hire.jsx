@@ -1,50 +1,9 @@
-import React, { useState } from 'react';
-import '../css/Hire.css'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import navLogo from '../assets/images/portfolio_logo_black.svg'
+import NavBar from '../components/NavBar'
 import hireProfile from '../assets/images/hire-profile.png'
-
-function NavBar (props) {
-    const [menu, toggleMenu] = useState(false);
-    const onClick = () => toggleMenu(!menu);
-
-    if (menu === true)
-        document.querySelector('body').classList.add('no-scroll')
-    else 
-        document.querySelector('body').classList.remove('no-scroll')
-        
-    return (
-        <div id="navbar-container" className="center width-size">
-            <nav id="navbar-contents">
-                <ul key="About"><a href='/#about'>About</a></ul>
-                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
-                <ul key="Home"><a href='/#' id="logo"><img id="portfolio-logo" alt="JC" src={navLogo}/></a></ul>
-                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
-                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
-            </nav>
-            { menu ?
-                <React.Fragment>
-                    <FontAwesomeIcon icon={faTimes} id="navbar-menu-button" onClick={onClick}/>
-                    <div className="white-overlay"></div> 
-                </React.Fragment> :
-                <FontAwesomeIcon icon={faBars} id="navbar-menu-button" onClick={onClick}/>
-            }
-            <nav id="navbar-menu-content" className={menu ? "active" : null}>
-                <ul key="About"><a href='/#about'>About</a></ul>
-                <hr></hr>
-                <ul key="Contact"><a href='/#contact'>Contact</a></ul>
-                <hr></hr>
-                <ul key="Projects"><a href='/#projects'>Projects</a></ul>
-                <hr></hr>
-                <ul key="Hire"><a href='/#hire'>Hire Me</a></ul>
-                <hr></hr>
-            </nav>
-        </div>
-    )
-}
-
+import '../css/Hire.css'
 
 export default class Hire extends React.Component {
     render () {

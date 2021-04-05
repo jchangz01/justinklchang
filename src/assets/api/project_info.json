@@ -1,10 +1,49 @@
 [
   {
-      "name": "BruinPlanner",
-      "date": "(Oct 2020 - Present)",
-      "primaryColor": "#2774AE",
-      "stack": "MongoDB, ExpressJS, ReactJS, NodeJS",
-      "thumbnail": "assets/project_images/BruinPlanner/thumbnail.jpg",
+    "name": "Strive",
+    "date": "(March 2021 - March 2021)",
+    "primaryColor": "#FAD0C9FF",
+    "stack": "MySQL(TypeORM), ExpressJS/Typescript, React-Native, NodeJS",
+    "thumbnail": "assets/project_images/Strive/thumbnail.png",
+    "images": [
+      {
+        "original": "assets/project_images/Strive/thumbnail.png",
+        "thumbnail": "assets/project_images/Strive/thumbnail.png"
+      },
+      {
+        "original": "assets/project_images/Strive/2.png",
+        "thumbnail": "assets/project_images/Strive/2.png"
+      },
+      {
+        "original": "assets/project_images/Strive/3.png",
+        "thumbnail": "assets/project_images/Strive/3.png"
+      },
+      {
+        "original": "assets/project_images/Strive/4.png",
+        "thumbnail": "assets/project_images/Strive/4.png"
+      },
+      {
+        "original": "assets/project_images/Strive/5.png",
+        "thumbnail": "assets/project_images/Strive/5.png"
+      },
+      {
+        "original": "assets/project_images/Strive/6.png",
+        "thumbnail": "assets/project_images/Strive/6.png"
+      }
+    ],
+    "description": [
+      "During this pandemic, staying productive and following your goals has been tougher than ever. The lack of motivation due to being locked up in your house creates an atmosphere of laziness. As someone victim to this phenomena, my partner and I decided to create an app that helps individuals stay motivated and hold them accountable for their goals.",
+      "At its core, Strive is a social media network meant to connect people through the concept of challenges. This is accomplished by allowing users to create challenges as well as join other user’s challenges. Users can follow each other to be “subscribed” to their created challenges. For a particular challenge, once a user has joined it, they can see the progress of all other joined users with the challenge as well as potential status updates. In this way, users can motivate/compete with each other all while being remote! ",
+      "Strive was built during the weeklong hackathon, LA Hacks 2021. Technologies used to create this app are React Native for the client-side and MySql (TypeOrm), ExpressJS/Typescript, and Node.js for the server-side. I contributed to the entirety of the frontend design and implemented several connections between the client and the server. Overall, I am really happy with the results of this project because it heavily strengthened my understanding of React Native."
+    ],
+    "sourceCodeLink": "https://github.com/jchangz01/strive/"
+  },
+  {
+    "name": "BruinPlanner",
+    "date": "(Oct 2020 - Present)",
+    "primaryColor": "#2774AE",
+    "stack": "MongoDB, ExpressJS, ReactJS, NodeJS",
+    "thumbnail": "assets/project_images/BruinPlanner/thumbnail.jpg",
     "images": [
       {
         "original": "assets/project_images/BruinPlanner/thumbnail.jpg",
@@ -23,13 +62,13 @@
         "thumbnail": "assets/project_images/BruinPlanner/4.jpg"
       }
     ],
-      "description": [
-        "Committing to a 4-year university may seem like a major accomplishment and stress reliever as you no longer have to deal with high school; however, the reality is that the pressure is only getting started. At a prestigious college such as the University of California, Los-Angeles, not only do students have to compete and strive for good grades, they have to worry about clubs, and more importantly, the classes they need to take to graduate. As a student myself, I understand that coursework itself is taxing enough; I don’t want to have to constantly meet up with counselors, maintain an updated Google doc, and surf through the UCLA coursework website to formulate a four-year plan that will inevitably change throughout my years at college.",
-        "BruinPlanner is an interactive application for UCLA students to design a visual 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information. If students had an interactive 4-year planner, where they can select their major and visually see what the required classes are with their respective prereqs, it would save them a lot of time. This website allows students to create an account that would give them access to 4-year planners where they can organize their classes based on a major's graduation requirements.",
-        "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). The website also utilizes many open-source npm packages such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving minor assistance from my UCLA CS Peers."
-      ],
-      "sourceCodeLink": "https://github.com/jchangz01/bruinplanner/",
-      "projectLink": "http://www.bruinplanner.justinklchang.com/"
+    "description": [
+      "Committing to a 4-year university may seem like a major accomplishment and stress reliever as you no longer have to deal with high school; however, the reality is that the pressure is only getting started. At a prestigious college such as the University of California, Los-Angeles, not only do students have to compete and strive for good grades, they have to worry about clubs, and more importantly, the classes they need to take to graduate. As a student myself, I understand that coursework itself is taxing enough; I don’t want to have to constantly meet up with counselors, maintain an updated Google doc, and surf through the UCLA coursework website to formulate a four-year plan that will inevitably change throughout my years at college.",
+      "BruinPlanner is an interactive application for UCLA students to design a visual 4-year plan. UCLA has always struggled with presenting course requirements and requisites due to them having too many websites with unnecessary information. If students had an interactive 4-year planner, where they can select their major and visually see what the required classes are with their respective prereqs, it would save them a lot of time. This website allows students to create an account that would give them access to 4-year planners where they can organize their classes based on a major's graduation requirements.",
+      "BruinPlanner is my first ever full-stack web application! It was created using the MERN stack and extracts UCLA course data from the UCLA DevX API (http://api.ucladevx.com/). The website also utilizes many open-source npm packages such as passport, bcrypt, and react-dnd. A majority of this project was created individually receiving minor assistance from my UCLA CS Peers."
+    ],
+    "sourceCodeLink": "https://github.com/jchangz01/bruinplanner/",
+    "projectLink": "http://www.bruinplanner.justinklchang.com/"
   },
   {
     "name": "ScribblMath",
@@ -89,7 +128,7 @@
   },
   {
     "name": "BruinDining+",
-    "date": "(Feb 2020)",
+    "date": "(Feb 2020 - Feb 2020)",
     "primaryColor": "#03A9F4",
     "stack": "Firebase, React Native, NodeJS",
     "thumbnail": "assets/project_images/BruinDining+/thumbnail.jpg",

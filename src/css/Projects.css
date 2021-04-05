@@ -149,7 +149,7 @@
         .all-projects-entry-selected > p {
             font-size: 0.92vw;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 648px) {
             .all-projects-entry-selected{ 
                 font-size: 10vw;
                 width: 76vw;
@@ -216,6 +216,7 @@
     margin-top: 3vh;
     vertical-align: top;
 }
+    .project-left-section > * { z-index: 0; }
     .img-gallery {
         width: 92%;
         margin-bottom: 30px;
