@@ -11,26 +11,27 @@ Navigation bar styling
   }
   
   #navbar-container {
-    padding: 54px 41.5px 0 72px;
+    padding-top: 54px;
     z-index: -5;
   }
   
   #navbar-contents {
     font-size: 36px;
     font-family: 'Bebas Neue', cursive; 
+    padding: 0 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
     #navbar-contents * { text-decoration: none;}
     #navbar-contents > * {
+      width: 200px;
       letter-spacing: 1px;
-      margin-right: 48px;
       transition: 0.3s;
       cursor: pointer;
       display: inline;
-    }
-  
-    #navbar-contents > *:last-of-type {
-      margin-right: 0;
+      margin: 0 auto;
     }
   
     #navbar-contents > *:hover {
@@ -99,8 +100,10 @@ Navigation bar styling
       height: 72px;
       width: 100%;
     }
-    #navbar-contents > * { display: none; margin: 0}
-    #navbar-contents > *:nth-of-type(3) { display: block; }
+    #navbar-contents { display: block; padding: 0; }
+    #navbar-contents > * { display: none; width: auto; }
+    #navbar-contents > * > a { margin: 0; }
+    #navbar-contents > *:nth-of-type(3) { display: inline-block; }
     #logo { width: 72px; height: 72px;}
     #portfolio-logo {width: 56px; margin-top: 14px;}
   
