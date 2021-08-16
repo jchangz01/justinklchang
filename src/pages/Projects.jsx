@@ -3,9 +3,9 @@ import { Link as ScrollLink } from 'react-scroll';
 import ImageGallery from 'react-image-gallery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/Navbar/'
 import data from '../assets/api/project_info.json'
-import '../css/Projects.css'
+import './css/Projects.css'
 
 const LatestProjectInfo = data[0]; //store latest project  
 const projectInfo = data.slice(1, data.length) //store remaining projects

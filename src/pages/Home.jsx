@@ -1,7 +1,7 @@
 import React from 'react';
 import homeProfile from '../assets/images/home-profile.png'
-import NavBar from '../components/NavBar'
-import '../css/Home.css'
+import NavBar from '../components/Navbar/'
+import './css/Home.css'
   
 export default class Home extends React.Component {
     render() {
@@ -16,7 +16,7 @@ export default class Home extends React.Component {
                             <div style={{marginBottom: "80px"}}>
                                 <h1 className="home-main-title">Justin Kyle</h1>
                                 <h1 className="home-main-title">Chang</h1>
-                                <h2 className="home-main-subtitle">2nd Year Computer Science Student at UCLA</h2>
+                                <h2 className="home-main-subtitle">3rd Year Computer Science Student at UCLA</h2>
                                 <p style={{fontSize: "64px", "marginBottom": "36px"}}> . . . </p>
                                 <h3 className="home-main-subsubtitle"><a href="/#about">Learn more about Justin</a></h3>
                             </div>

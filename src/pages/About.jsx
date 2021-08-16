@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import aboutProfile from '../assets/images/about-profile.JPG'
-import NavBar from "../components/NavBar";
-import '../css/About.css'
+import NavBar from '../components/Navbar/'
+import './css/About.css'
 
 export default class Contact extends React.Component {
     render() {
@@ -22,17 +22,17 @@ export default class Contact extends React.Component {
                                 <h1 className="about-main-title">About Me</h1>
                                 <hr className="about-main-linebreak"></hr>
                                 <p className="about-main-paragraph">
-                                    Hello! My name is <b>Justin Kyle Chang</b>. I am a 2nd-year student at UCLA (from the Bay Area) pursuing a 
+                                    Hello! My name is <b>Justin Kyle Chang</b>. I am a 3rd-year student at UCLA (from the Bay Area) pursuing a 
                                     B.E. degree in Computer Science and aspiring to be a software engineer. 
                                 </p>
                                 <p className="about-main-paragraph">
-                                    My focus and interest lie in web development, particularly in front end design (HTML5, CSS3, JS/JSX); 
-                                    however, I am open to exploring all fields of Computer Science! I am also knowledgeable in 
-                                    backend development (Node.js, Express, and MongoDB), C++ (Data structures and algorithms), Bash / Shell, and Git.
+                                    My focus and interest lie in web development; however, I am open to exploring all fields of Computer Science! 
+                                    I am knowledgeable in full stack development (Vue.js, React.js, Node.js, Express, and MongoDB), data structures 
+                                    and algorithms (C++), Bash / Shell, and Git.
                                 </p> 
                                 <p className="about-main-paragraph">
                                     I love to solve problems, build applications, collaborate in teams, and during my free time, 
-                                    go on runs and hikes! I am currently looking for a 2021 summer internship! 
+                                    go on runs and hikes! I am currently looking for a 2022 summer internship! 
                                 </p>
                                 <p className="about-main-paragraph">
                                     Check out my projects <a href="/#projects">here</a> and/or connect with me <a href="/#contact">here</a>.

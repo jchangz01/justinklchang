@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faLinkedin, faStrava, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons'
-import NavBar from '../components/NavBar'
-import '../css/Contact.css'
+import NavBar from '../components/Navbar/'
+import './css/Contact.css'
 
 function Socials (props) {
     return (

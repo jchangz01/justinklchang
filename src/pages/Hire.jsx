@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/Navbar/'
 import hireProfile from '../assets/images/hire-profile.png'
-import '../css/Hire.css'
+import './css/Hire.css'
 
 export default class Hire extends React.Component {
     render () {
