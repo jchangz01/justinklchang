@@ -10,8 +10,8 @@ Styling for image gallery library
 /////////////////////*/
 * {
   font-family: 'Roboto', sans-serif;
-  color: white;
   box-sizing: border-box;
+  transition: 0.6s;
 }
 
 body {
@@ -54,7 +54,6 @@ General styling for all pages
 ////////////////////////////*/
 #content-container {
   height: 100vh;
-  background-color: black;
   z-index: -3;
 }
 
@@ -197,11 +196,11 @@ Animations
   }
 }
 
-.float {
-  animation: float 6s ease-in-out infinite;
+.float-white {
+  animation: float-white 6s ease-in-out infinite;
 }
 
-@keyframes float {
+@keyframes float-white {
   0% {
       transform: translatey(0px);
       box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
@@ -213,6 +212,26 @@ Animations
   }
   100% {
       box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
+      transform: translatey(0px);
+  }
+}
+
+.float-black {
+  animation: float-black 6s ease-in-out infinite;
+}
+
+@keyframes float-black {
+  0% {
+      transform: translatey(0px);
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
+  }
+  50% {
+      
+  box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.8);
+      transform: translatey(-20px);
+  }
+  100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
       transform: translatey(0px);
   }
 }
@@ -260,4 +279,22 @@ Random styling
 .no-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+
+/* Main Colors */
+.black {
+  color: black !important;
+}
+.bg-black {
+  background-color: black !important;
+}
+
+.white {color: white !important;}
+.bg-white {
+  background-color: white !important;
+}
+
+.gray {
+  color: #ccc !important;
 }

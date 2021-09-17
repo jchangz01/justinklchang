@@ -1,5 +1,5 @@
 #about-main {
-    height: calc(100vh - 154px);
+    height: calc(100vh - 176px);
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -17,7 +17,7 @@
 
     /*Left Side Content */
     .about-main-pic{
-        margin-right: 44px;
+        margin-right: 60px;
         margin-bottom: 2vh;
         width:360px;
         height: auto;
@@ -64,7 +64,6 @@
 
     .about-main-socials svg {
         color: black;
-        background-color: black
     }
 
 /*Mobile Responsive Design */

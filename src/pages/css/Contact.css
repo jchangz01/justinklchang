@@ -1,5 +1,5 @@
 #contact-main {
-    height: calc(100vh - 154px);
+    height: calc(100vh - 176px);
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -67,7 +67,6 @@
             vertical-align: middle;
             border-radius: 50%;
             background: black;
-            animation: float 6s ease-in-out infinite;
             display: inline-block;
             transition:  0.3s;
             cursor: pointer;
@@ -81,7 +80,7 @@
         .facebook:hover { background: #4267B2; }
         .github:hover { background: #24292e; }
         .tiktok:hover { background: white; }
-        .tiktok:hover * { color: #ee1d52}
+        .tiktok:hover * { color: #ee1d52 !important}
         .strava:hover { background: #FC4C02; }
         .spotify:hover { background: #1DB954; }
 

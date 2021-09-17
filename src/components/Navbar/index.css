@@ -11,7 +11,7 @@ Navigation bar styling
   }
   
   #navbar-container {
-    padding-top: 54px;
+    padding-top: 32px;
     z-index: -5;
   }
   
@@ -28,13 +28,13 @@ Navigation bar styling
     #navbar-contents > * {
       width: 200px;
       letter-spacing: 1px;
-      transition: 0.3s;
-      cursor: pointer;
       display: inline;
       margin: 0 auto;
     }
   
-    #navbar-contents > *:hover {
+    #navbar-contents a { transition: 0.3s; }
+    #navbar-contents a:hover {
+      cursor: pointer;
       opacity: 0.5;
     }
   
@@ -95,7 +95,7 @@ Navigation bar styling
   @media (max-width: 648px) {
     #navbar-container {
       padding: 0;
-      margin-top: 16px;
+      padding-top: 16px;
       position: relative;
       height: 72px;
       width: 100%;
@@ -115,3 +115,86 @@ Navigation bar styling
     }
   }
   
+/*//////////////////////////
+COMPONENT: DLModeBtn Styling
+//////////////////////////*/
+.dl-icon {
+  height: 24px;
+  width: 24px;
+}
+.dl-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 4px;
+}
+
+/* Hide default HTML checkbox */
+.dl-switch .dl-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.dl-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dl-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dl-input:checked + .dl-slider {
+  background-color: white;
+}
+.dl-input:checked + .dl-slider::before {
+  background-color: black;
+}
+
+.dl-input:focus + .dl-slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+.dl-input:checked + .dl-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.dl-slider.round {
+  border-radius: 34px;
+}
+
+.dl-slider.round:before {
+  border-radius: 50%;
+}
+/*Mobile Responsive Design */
+@media (max-width: 648px) {
+  #dl-container {
+    position: absolute;
+    right: 24px;
+    top: 36px;
+  }
+  .dl-switch { margin: 0; }
+  .dl-icon { display: none; }
+
+}

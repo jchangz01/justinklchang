@@ -5,20 +5,25 @@ import aboutProfile from '../assets/images/about-profile.JPG'
 import NavBar from '../components/Navbar/'
 import './css/About.css'
 
+import { dlModeContext } from '../contexts/dlMode';
+
 export default class Contact extends React.Component {
+    static contextType = dlModeContext;
+
     render() {
+        let [dlMode] = this.context;
         return (
-            <div id="content-container">
+            <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
                 <header>
-                    <NavBar/>
+                    <NavBar dlMode={dlMode}/>
                 </header>
                 <section>
                     <div className="width-size fade-in-3" id="about-main">
                         <div className="about-main-content" style={{textAlign: "right"}}>
                             <img className="about-main-pic" src={aboutProfile} alt="Did not load, please refresh"/>
                         </div>
-                        <div className="about-main-content">
-                            <div style={{marginLeft: "40px"}}>
+                        <div className={`about-main-content ${dlMode ? 'white' : 'black'}`}>
+                            <div style={{marginLeft: "44px"}}>
                                 <h1 className="about-main-title">About Me</h1>
                                 <hr className="about-main-linebreak"></hr>
                                 <p className="about-main-paragraph">
