@@ -7,31 +7,31 @@ import './css/Contact.css'
 
 import { dlModeContext } from '../contexts/dlMode';
 
-function Socials ({dark}) {
+function Socials ({dlMode}) {
     return (
         <div id="contact-main-icon-container">
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/" className={`icon-circle instagram ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faInstagram}/></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/j.changz/" className={`icon-circle instagram ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faInstagram}/></a>
                 <h4 className="icon-name">Instagram</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-kyle-chang-31582419b/" className={`icon-circle linkedin ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faLinkedin}/></a>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-kyle-chang-31582419b/" className={`icon-circle linkedin ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faLinkedin}/></a>
                 <h4 className="icon-name">LinkedIn</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/" className={`icon-circle facebook ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faFacebook}/></a>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/" className={`icon-circle facebook ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faFacebook}/></a>
                 <h4 className="icon-name">Facebook</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01" className={`icon-circle github ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faGithub}/></a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01" className={`icon-circle github ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faGithub}/></a>
                 <h4 className="icon-name">GitHub</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en" className={`icon-circle tiktok ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faTiktok}/></a>
+                <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en" className={`icon-circle tiktok ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faTiktok}/></a>
                 <h4 className="icon-name">TikTok</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493" className={`icon-circle strava ${dark ? 'float-white' : 'float-black'}`}><FontAwesomeIcon className="icon" icon={faStrava}/></a>
+                <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493" className={`icon-circle strava ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faStrava}/></a>
                 <h4 className="icon-name">Strava</h4>
             </div>
         </div>
@@ -80,21 +80,21 @@ export default class Contact extends React.Component {
                 </header>
                 <section>   
                     <div className="width-size fade-in-3" id="contact-main"> 
-                        <div className={`contact-main-content ${dlMode ? 'white' : 'black'}`}>
-                            <h1 id="contact-main-title">Contact Me</h1>
+                        <div className="contact-main-content">
+                            <h1 id="contact-main-title" className={dlMode ? 'white' : 'black'}>Contact Me</h1>
                             <h2 id="contact-main-subtitle">Get in touch with me now!</h2>
                             <div id="contact-main-email-container">
-                                <h3 className="email-content">Personal Email: <span onClick={() => this.copyToClipboard("personal")}>justinklchang@yahoo.com
-                                        <FontAwesomeIcon style={{marginLeft: "12px"}} icon={faClipboard}/>
+                                <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>Personal Email: <span onClick={() => this.copyToClipboard("personal")}>justinklchang@yahoo.com
+                                        <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
                                     </span>
                                 </h3>
-                                <h3 className="email-content">School Email: <span onClick={() => this.copyToClipboard("school")}> jchangz01@g.ucla.edu
-                                        <FontAwesomeIcon style={{marginLeft: "12px"}} icon={faClipboard}/>
+                                <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>School Email: <span onClick={() => this.copyToClipboard("school")}> jchangz01@g.ucla.edu
+                                        <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
                                     </span>
                                 </h3>
                             </div>
                             {this.state.message ? <div key={this.state.updateKey} className="contact-message fade-in-2">Copied to Clipboard</div> : null}
-                            <Socials dark={dlMode} />
+                            <Socials dlMode={dlMode} />
                         </div>
                     </div>
                 </section>

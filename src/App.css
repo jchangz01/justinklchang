@@ -83,7 +83,6 @@ General styling for all pages
   font-size: 14px;
   padding-bottom: 12px;
   text-align: center;
-  color: lightgray
 }
 #copyright {
   letter-spacing: 2px;
@@ -92,7 +91,6 @@ General styling for all pages
   font-size: 12px;
   padding-bottom: 16px;
   text-align: center;
-  color: lightgray
 }
 
 @media (max-width: 648px) {
@@ -107,7 +105,6 @@ General styling for icons
 .scroll-down-icon {
   margin-top: 16px;
   font-size: 40px;
-  color: white;
   transition: 0.3s;
   cursor: pointer;
 }

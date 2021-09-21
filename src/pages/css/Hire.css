@@ -14,9 +14,9 @@
     position: relative;
     line-height: 32px;
     padding-left: 20px;
+    color: gray;
 }
     .hire-main-content * {
-        color: gray;
         font-family: 'Roboto';
     }
 
@@ -46,7 +46,6 @@
     margin-right: 16px;
     transition: 0.3s;
 }
-.hire-social * { color: white }
 
 .hire-social:hover  { opacity: 0.3; }
 
