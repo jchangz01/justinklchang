@@ -53,7 +53,7 @@ b {
 General styling for all pages
 ////////////////////////////*/
 #content-container {
-  height: 100vh;
+  height: 100%;
   z-index: -3;
 }
 

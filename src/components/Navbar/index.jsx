@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import navLogo from '../../assets/images/portfolio_logo_black.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import navLogoBlack from '../../assets/images/portfolio_logo_black.svg';
+import navLogoWhite from '../../assets/images/portfolio_logo_white.svg';
 import DLModeBtn from './DLModeBtn';
-import './index.css'
+import './index.css';
 
 export default function NavBar ({dlMode}) {
     const [menu, toggleMenu] = useState(false);
@@ -17,7 +18,7 @@ export default function NavBar ({dlMode}) {
                 </ul>
                 <ul key="Contact"><a className={dlMode ? 'white' : 'black'} href='/#contact'>Contact</a></ul>
                 <ul key="Home">
-                    <a href='/#' id="logo" style={{marginBottom:"8px"}}><img id="portfolio-logo" alt="JC" src={navLogo}/></a>
+                    <a href='/#' id="logo" className={dlMode ? 'bg-white' : 'bg-black'} style={{marginBottom:"8px"}}><img id="portfolio-logo" alt="JC" src={dlMode ? navLogoBlack : navLogoWhite}/></a>
                     <DLModeBtn />
                 </ul>
                 <ul key="Projects"><a className={dlMode ? 'white' : 'black'} href='/#projects'>Projects</a></ul>

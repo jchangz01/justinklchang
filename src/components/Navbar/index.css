@@ -40,16 +40,14 @@ Navigation bar styling
   
   #logo {
     vertical-align: middle;
-    border-radius: 50%;
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: white;
     font-size: 60px;
     margin: 0 48px;
     z-index: -6;
+    border-radius: 50%;
   }
-  
   
   /*Mobile Responsive Design */
   #navbar-menu-button {
