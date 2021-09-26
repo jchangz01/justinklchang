@@ -58,9 +58,14 @@
         border-radius: 50%;
         width: 320px;
         height: 320px;    
-        background-color: violet;
         position: absolute;
         z-index: -1;
+    }
+    .circ-dark {
+        background-color: violet;
+    }
+    .circ-light {
+        background-color: #FFD73e;
     }
 
     .home-main-subcirc {
@@ -69,10 +74,16 @@
         border-radius: 50%;
         width: 280px;
         height: 280px;    
-        background-color: lavender;
-        border: 20px solid plum;
         position: absolute;
         z-index: -1;
+    }
+    .subcirc-dark {
+        background-color: lavender;
+        border: 20px solid plum;
+    }
+    .subcirc-light {
+        background-color: cornsilk;
+        border: 20px solid #FFdb8e;
     }
 
 

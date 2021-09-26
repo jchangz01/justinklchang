@@ -28,8 +28,8 @@ export default class Home extends React.Component {
                         </div>
                         <div className="home-main-content">
                             <img src={homeProfile} alt="Did not load, please refresh" className={`home-main-pic ${dlMode ? 'float-white' : 'float-black'}`} />
-                            <div className={`home-main-circ ${dlMode ? 'float-white' : 'float-black'}`}>
-                                <div className="home-main-subcirc"></div>
+                            <div className={`home-main-circ ${dlMode ? 'float-white circ-dark' : 'float-black circ-light'}`}>
+                                <div className={`home-main-subcirc ${dlMode ? 'subcirc-dark' : 'subcirc-light'}`}></div>
                             </div>
                         </div>
                     </div>
