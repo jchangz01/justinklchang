@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import ImageGallery from 'react-image-gallery';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons'
-import NavBar from '../components/Navbar/'
-import data from '../assets/api/project_info.json'
-import './css/Projects.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown, faCode, faLink } from '@fortawesome/free-solid-svg-icons';
+import data from '../assets/api/project_info.json';
+import './css/Projects.css';
 
 import { dlModeContext } from '../contexts/dlMode';
 
@@ -169,11 +168,8 @@ export default class Projects extends React.Component {
     render() {
         let [dlMode] = this.context;
         return (
-            <div id="content-container" className={dlMode ? "bg-black" : "bg-white"} style={{height: "auto"}}>
-                <header style={{zIndex: "1"}}> 
-                    <NavBar dlMode={dlMode}/>
-                </header>
-                <section >   
+            <>
+                <section>   
                     <div className="width-size fade-in-3" id="project-main"> 
                         <div className="project-main-content">
                             <h1 id="project-main-title" className={dlMode ? 'white' : 'black'}>Projects</h1>
@@ -217,7 +213,6 @@ export default class Projects extends React.Component {
                             : null
                     }
                     <div id="all-projects-content" className="fade-in-3">
-
                             <div style={{ textAlign: 'center'}}>
                                 <h1 id="all-projects-title" className={dlMode ? 'white' : 'black'}>Project Gallery</h1>
                                 <h2 id="all-projects-subtitle" className={dlMode ? 'white' : 'black'}>Hover over each thumbnail and click to learn more!</h2>
@@ -227,7 +222,7 @@ export default class Projects extends React.Component {
                         
                     </div>
                 </section>
-            </div>
+            </>
         )
     }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
-import homeProfile from '../assets/images/home-profile.png'
-import NavBar from '../components/Navbar/'
-import './css/Home.css'
+import homeProfile from '../assets/images/home-profile.png';
+import './css/Home.css';
   
 import { dlModeContext } from '../contexts/dlMode';
 
@@ -11,10 +10,7 @@ export default class Home extends React.Component {
     render() {
         let [dlMode] = this.context;
         return (
-            <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
-                <header className="fade-in-6">
-                    <NavBar dlMode={dlMode}/>
-                </header>
+            <>
                 <section>
                     <div className="width-size fade-in-3" id="home-main">
                         <div className="home-main-content">
@@ -44,7 +40,7 @@ export default class Home extends React.Component {
                         <b>justinklchang.com</b>
                     </div>
                 </footer>
-            </div>
+            </>
         )
     }
 }

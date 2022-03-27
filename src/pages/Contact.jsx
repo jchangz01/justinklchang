@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub, faInstagram, faLinkedin, faStrava, faTiktok } from '@fortawesome/free-brands-svg-icons'
-import { faClipboard } from '@fortawesome/free-solid-svg-icons'
-import NavBar from '../components/Navbar/'
-import './css/Contact.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faStrava, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faClipboard } from '@fortawesome/free-solid-svg-icons';
+import './css/Contact.css';
 
 import { dlModeContext } from '../contexts/dlMode';
 
@@ -74,10 +73,7 @@ export default class Contact extends React.Component {
     render() {
         let [dlMode] = this.context;
         return (
-            <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
-                <header>
-                    <NavBar dlMode={dlMode}/>
-                </header>
+            <>
                 <section>   
                     <div className="width-size fade-in-3" id="contact-main"> 
                         <div className="contact-main-content">
@@ -98,7 +94,7 @@ export default class Contact extends React.Component {
                         </div>
                     </div>
                 </section>
-            </div>
+            </>
         )
     }
 }

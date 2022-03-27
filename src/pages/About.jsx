@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons'
-import aboutProfile from '../assets/images/about-profile.jpg'
-import NavBar from '../components/Navbar/'
-import './css/About.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import aboutProfile from '../assets/images/about-profile.jpg';
+import './css/About.css';
 
 import { dlModeContext } from '../contexts/dlMode';
 
@@ -13,10 +12,7 @@ export default class Contact extends React.Component {
     render() {
         let [dlMode] = this.context;
         return (
-            <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
-                <header>
-                    <NavBar dlMode={dlMode}/>
-                </header>
+            <>
                 <section>
                     <div className="width-size fade-in-3" id="about-main">
                         <div className="about-main-content" style={{textAlign: "right"}}>
@@ -54,7 +50,7 @@ export default class Contact extends React.Component {
                         </div>
                     </div>
                 </section>
-            </div>
+            </>
         )
     }
 }

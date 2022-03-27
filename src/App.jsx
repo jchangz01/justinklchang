@@ -4,8 +4,9 @@ import Home from './pages/Home';
 import About from './pages/About'
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Hire from './pages/Hire'
-import Resume from './pages/Resume'
+import Hire from './pages/Hire';
+import Resume from './pages/Resume';
+import NavBar from './components/Navbar';
 import './App.css'
 
 import { dlModeContext } from './contexts/dlMode';
@@ -15,15 +16,20 @@ export default function App () {
     return (
         <main>
             <dlModeContext.Provider value={[dlMode, setDLMode]}>
-                <Switch>
-                    <Route path="/" component={Home} exact />
-                    <Route path="/about" component={About} exact/>
-                    <Route path="/contact" component={Contact} exact/>
-                    <Route path="/projects" component={Projects} exact/>
-                    <Route path="/hire" component={Hire} exact/>
-                    <Route path="/resume" component={Resume} exact/>
-                    <Route component={PathNotFound} />
-                </Switch>
+                <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
+                    <header className="fade-in-6">
+                        <NavBar dlMode={dlMode}/>
+                    </header>
+                    <Switch>
+                        <Route path="/" component={Home} exact />
+                        <Route path="/about" component={About} exact/>
+                        <Route path="/contact" component={Contact} exact/>
+                        <Route path="/projects" component={Projects} exact/>
+                        <Route path="/hire" component={Hire} exact/>
+                        <Route path="/resume" component={Resume} exact/>
+                        <Route component={PathNotFound} />
+                    </Switch>
+                </div>
             </dlModeContext.Provider>
         </main>
     )
