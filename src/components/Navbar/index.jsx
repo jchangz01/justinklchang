@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import navLogoBlack from '../../assets/images/portfolio_logo_black.svg';
@@ -7,6 +8,14 @@ import DLModeBtn from './DLModeBtn';
 import './index.css';
 
 export default function NavBar ({dlMode}) {
+    //turn off nav menu when navigating to a new page
+    const history = useHistory();
+    useEffect(() => {
+        return history.listen(() => { 
+            toggleMenu(false);
+        }) 
+    }, [history])
+
     const [menu, toggleMenu] = useState(false);
     const onClick = () => toggleMenu(!menu);
         
