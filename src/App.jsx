@@ -7,17 +7,20 @@ import Contact from './pages/Contact';
 import Hire from './pages/Hire';
 import Resume from './pages/Resume';
 import NavBar from './components/Navbar';
-import './App.css'
+import './App.css';
 
 import { dlModeContext } from './contexts/dlMode';
 
 export default function App () {
-    const [dlMode, setDLMode] = useState(true)
+    const [dlMode, setDLMode] = useState(true);
+    const url = window.location.href;
+    const pathname = url.split('/').splice(-1)[0];
+
     return (
         <main>
             <dlModeContext.Provider value={[dlMode, setDLMode]}>
                 <div id="content-container" className={dlMode ? "bg-black" : "bg-white"}>
-                    <header className="fade-in-6">
+                    <header className="fade-in-6" style={pathname === 'resume' ? {display: 'none'} : null}>
                         <NavBar dlMode={dlMode}/>
                     </header>
                     <Switch>
