@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedin, faInstagram, faStrava, faGithub, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import aboutProfile from '../assets/images/about-profile.jpg';
 import './css/About.css';
 
@@ -33,7 +33,7 @@ export default class Contact extends React.Component {
                                 </p> 
                                 <p className={`about-main-paragraph ${dlMode ? 'white' : 'black'}`}>
                                     I love to solve problems, build applications, collaborate in teams, and during my free time, 
-                                    go on runs and hikes! I am currently looking for a 2022 summer internship! 
+                                    go on runs and hikes!
                                 </p>
                                 <p className={`about-main-paragraph ${dlMode ? 'white' : 'black'}`}>
                                     Check out my projects <a href="/#projects" className={dlMode ? 'white' : 'black'}>here</a> and/or connect with me <a href="/#contact" className={dlMode ? 'white' : 'black'}>here</a>.
@@ -43,7 +43,7 @@ export default class Contact extends React.Component {
                                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-kyle-chang-31582419b/"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faLinkedin}/></a>
                                     <a target="_blank" rel="noreferrer" href="https://www.facebook.com/justin.chang.54772/"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faFacebook}/></a>
                                     <a target="_blank" rel="noreferrer" href="https://github.com/jchangz01"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faGithub}/></a>
-                                    <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faTiktok}/></a>
+                                    <a target="_blank" rel="noreferrer" href="https://open.spotify.com/user/justinklchang?si=f50776d8724a43c5"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faSpotify}/></a>
                                     <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493"><FontAwesomeIcon className={dlMode ? 'white' : 'black'} icon={faStrava}/></a>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faInstagram, faLinkedin, faStrava, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faSpotify, faStrava } from '@fortawesome/free-brands-svg-icons';
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 import './css/Contact.css';
 
@@ -26,8 +26,8 @@ function Socials ({dlMode}) {
                 <h4 className="icon-name">GitHub</h4>
             </div>
             <div>
-                <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@j.changz?lang=en" className={`icon-circle tiktok ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faTiktok}/></a>
-                <h4 className="icon-name">TikTok</h4>
+                <a target="_blank" rel="noreferrer" href="https://open.spotify.com/user/justinklchang?si=f50776d8724a43c5" className={`icon-circle spotify ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faSpotify}/></a>
+                <h4 className="icon-name">Spotify</h4>
             </div>
             <div>
                 <a target="_blank" rel="noreferrer" href="https://www.strava.com/athletes/51901493" className={`icon-circle strava ${dlMode ? 'float-white bg-black' : 'float-black bg-white'}`}><FontAwesomeIcon className={`icon ${dlMode ? 'white' : 'black'}`} icon={faStrava}/></a>
