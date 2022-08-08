@@ -13,7 +13,7 @@ const projectInfo = data.slice(1, data.length) //store remaining projects
 
 function ProjectDescription ({project, latest, dlMode}) {
     return (
-        <React.Fragment>
+        <>
             <h2 className={`project-title ${dlMode ? 'black' : 'white'}`}>Introducing <span style={{color: project.primaryColor}}>{project.name}!</span></h2>
             <h3 className={`project-stack ${dlMode ? 'black' : 'white'}`}>Tech Stack: {project.stack}</h3>
             <div className={latest ? "width-size" : null}>
@@ -54,7 +54,7 @@ function ProjectDescription ({project, latest, dlMode}) {
                     <span className="project-date">{project.date}</span>
                 </div>
             </div>
-        </React.Fragment>
+        </>
     )
 }
 

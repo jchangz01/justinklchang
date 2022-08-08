@@ -73,28 +73,26 @@ export default class Contact extends React.Component {
     render() {
         let [dlMode] = this.context;
         return (
-            <>
-                <section>   
-                    <div className="width-size fade-in-3" id="contact-main"> 
-                        <div className="contact-main-content">
-                            <h1 id="contact-main-title" className={dlMode ? 'white' : 'black'}>Contact Me</h1>
-                            <h2 id="contact-main-subtitle">Get in touch with me now!</h2>
-                            <div id="contact-main-email-container">
-                                <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>Personal Email: <span onClick={() => this.copyToClipboard("personal")}>justinklchang@yahoo.com
-                                        <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
-                                    </span>
-                                </h3>
-                                <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>School Email: <span onClick={() => this.copyToClipboard("school")}> jchangz01@g.ucla.edu
-                                        <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
-                                    </span>
-                                </h3>
-                            </div>
-                            {this.state.message ? <div key={this.state.updateKey} className="contact-message fade-in-2">Copied to Clipboard</div> : null}
-                            <Socials dlMode={dlMode} />
+            <section>   
+                <div className="width-size fade-in-3" id="contact-main"> 
+                    <div className="contact-main-content">
+                        <h1 id="contact-main-title" className={dlMode ? 'white' : 'black'}>Contact Me</h1>
+                        <h2 id="contact-main-subtitle">Get in touch with me now!</h2>
+                        <div id="contact-main-email-container">
+                            <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>Personal Email: <span onClick={() => this.copyToClipboard("personal")}>justinklchang@yahoo.com
+                                    <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
+                                </span>
+                            </h3>
+                            <h3 className={`email-content ${dlMode ? 'white' : 'black'}`}>School Email: <span onClick={() => this.copyToClipboard("school")}> jchangz01@g.ucla.edu
+                                    <FontAwesomeIcon style={{marginLeft: "12px"}} className={dlMode ? 'white' : 'black'} icon={faClipboard}/>
+                                </span>
+                            </h3>
                         </div>
+                        {this.state.message ? <div key={this.state.updateKey} className="contact-message fade-in-2">Copied to Clipboard</div> : null}
+                        <Socials dlMode={dlMode} />
                     </div>
-                </section>
-            </>
+                </div>
+            </section>
         )
     }
 }

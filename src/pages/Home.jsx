@@ -17,7 +17,7 @@ export default class Home extends React.Component {
                             <div style={{marginBottom: "80px"}}>
                                 <h1 className={`home-main-title ${dlMode ? 'white' : 'black'}`} onClick={() => console.log(dlMode)}>Justin Kyle</h1>
                                 <h1 className={`home-main-title ${dlMode ? 'white' : 'black'}`} >Chang</h1>
-                                <h2 className="home-main-subtitle" >3rd Year Computer Science Student at UCLA</h2>
+                                <h2 className="home-main-subtitle" >4th Year Computer Science Student at UCLA</h2>
                                 <p className={dlMode ? 'white' : 'black'} style={{fontSize: "64px", "marginBottom": "36px"}}> . . . </p>
                                 <h3><a className={`home-main-subsubtitle ${dlMode ? 'white' : 'black'}`} href="/#about">Learn more about Justin</a></h3>
                             </div>
