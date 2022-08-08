@@ -23,7 +23,7 @@ export default class Contact extends React.Component {
                             <hr className={`about-main-linebreak ${dlMode ? 'bg-white' : 'bg-black'}`}></hr>
                             <p className={`about-main-paragraph ${dlMode ? 'white' : 'black'}`}>
                                 Hello! My name is <b>Justin Kyle Chang</b>. I am a 4th-year student at UCLA (from the Bay Area) pursuing a 
-                                B.E. degree in Computer Science and aspiring to be a software engineer. 
+                                B.S. degree in Computer Science and aspiring to be a software engineer. 
                             </p>
                             <p className={`about-main-paragraph ${dlMode ? 'white' : 'black'}`}>
                                 My focus and interest lie in web development; however, I am open to exploring all fields of Computer Science! 
