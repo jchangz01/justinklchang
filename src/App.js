@@ -5,7 +5,6 @@ import About from './pages/About'
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Hire from './pages/Hire';
-import Resume from './pages/Resume';
 import NavBar from './components/Navbar';
 import './App.css';
 
@@ -29,7 +28,6 @@ export default function App () {
                         <Route path="/contact" component={Contact} exact/>
                         <Route path="/projects" component={Projects} exact/>
                         <Route path="/hire" component={Hire} exact/>
-                        <Route path="/resume" component={Resume} exact/>
                         <Route component={PathNotFound} />
                     </Switch>
                 </div>
