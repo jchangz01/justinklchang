@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 //false for light mode
 //true for dark mode
