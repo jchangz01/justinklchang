@@ -34,7 +34,7 @@ export default class Hire extends React.Component {
                 <u>
                   <a
                     target="_blank"
-                    href="https://drive.google.com/drive/folders/1A9WLecDxynFtUm69CMvK5atP4hByXKnT"
+                    href="https://docs.google.com/document/d/1wwQ1mZUrzQrgdfGabDUMlG5lAAkEUS1Zt-itZG186jo/preview"
                     className={dlMode ? "white" : "black"}
                   >
                     Link to Resume
