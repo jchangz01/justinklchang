@@ -161,27 +161,17 @@ export default class Contact extends React.Component {
             </h1>
             <h2 id="contact-main-subtitle">Get in touch with me now!</h2>
             <div id="contact-main-email-container">
-              <h3 className={`email-content ${dlMode ? "white" : "black"}`}>
-                Personal Email:{" "}
+              <h3
+                title="Copy to clipboard"
+                className={`email-content ${dlMode ? "white" : "black"}`}
+              >
                 <span onClick={() => this.copyToClipboard("personal")}>
-                  justinklchang@yahoo.com
                   <FontAwesomeIcon
-                    style={{ marginLeft: "12px" }}
+                    style={{ marginRight: "12px" }}
                     className={dlMode ? "white" : "black"}
                     icon={faClipboard}
                   />
-                </span>
-              </h3>
-              <h3 className={`email-content ${dlMode ? "white" : "black"}`}>
-                School Email:{" "}
-                <span onClick={() => this.copyToClipboard("school")}>
-                  {" "}
                   jchangz01@g.ucla.edu
-                  <FontAwesomeIcon
-                    style={{ marginLeft: "12px" }}
-                    className={dlMode ? "white" : "black"}
-                    icon={faClipboard}
-                  />
                 </span>
               </h3>
             </div>

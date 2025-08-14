@@ -22,19 +22,18 @@ export default class Hire extends React.Component {
           <div className="hire-main-content">
             <div style={{ marginBottom: "80px" }}>
               <h2 id="hire-name">Justin Kyle Chang</h2>
-              <h3>Software Engineer Intern</h3>
+              <h3>Software Engineer | UCLA Computer Science Graduate</h3>
               <h3>Bay Area &#183; San Francisco &#183; Silicon Valley</h3>
             </div>
             <div style={{ marginBottom: "80px" }}>
               <h3 id="hire-advertise">
-                Please consider hiring me by checking out my resume and reaching
-                out to me!
+                Feel free to check out my resume and reach to me!
               </h3>
               <h4>
                 <u>
                   <a
                     target="_blank"
-                    href="https://docs.google.com/document/d/1wwQ1mZUrzQrgdfGabDUMlG5lAAkEUS1Zt-itZG186jo/preview"
+                    href="https://docs.google.com/document/d/1kA4w67Z_GMvrUhR7hzKQWbHaXg63xv9H6i7pOl35umA/preview"
                     className={dlMode ? "white" : "black"}
                   >
                     Link to Resume
@@ -42,7 +41,7 @@ export default class Hire extends React.Component {
                 </u>
               </h4>
               <h4 className={dlMode ? "white" : "black"}>
-                justinklchang@yahoo.com
+                jchangz01@g.ucla.edu
               </h4>
               <h4 className={dlMode ? "white" : "black"}>(707) 534-8001</h4>
             </div>

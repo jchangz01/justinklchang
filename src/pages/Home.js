@@ -24,12 +24,13 @@ export default class Home extends React.Component {
                 <h1 className={`home-main-title ${dlMode ? "white" : "black"}`}>
                   Chang
                 </h1>
-                <h2 className="home-main-subtitle">
-                  4th Year Computer Science Student at UCLA
-                </h2>
+                <h2 className="home-main-subtitle">Software Engineer</h2>
                 <p
                   className={dlMode ? "white" : "black"}
-                  style={{ fontSize: "64px", marginBottom: "36px" }}
+                  style={{
+                    fontSize: "64px",
+                    marginBottom: "36px",
+                  }}
                 >
                   {" "}
                   . . .{" "}

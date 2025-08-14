@@ -41,18 +41,17 @@ export default class Contact extends React.Component {
               <p
                 className={`about-main-paragraph ${dlMode ? "white" : "black"}`}
               >
-                Hello! My name is <b>Justin Kyle Chang</b>. I am a 4th-year
-                student at UCLA (from the Bay Area) pursuing a B.S. degree in
-                Computer Science and aspiring to be a software engineer.
+                Hello! My name is <b>Justin Kyle Chang</b>. I am a class of 2023
+                UCLA alumnus with a B.S. degree in Computer Science. I am
+                currently employed as full time software engineer!
               </p>
               <p
                 className={`about-main-paragraph ${dlMode ? "white" : "black"}`}
               >
                 My focus and interest lie in web development; however, I am open
                 to exploring all fields of Computer Science! I am knowledgeable
-                in full stack development (Vue.js, React.js, Node.js, Express,
-                and MongoDB), data structures and algorithms (C++), Bash /
-                Shell, and Git.
+                in full stack development, databases, data structures and
+                algorithms, big data, and distributed systems.
               </p>
               <p
                 className={`about-main-paragraph ${dlMode ? "white" : "black"}`}
